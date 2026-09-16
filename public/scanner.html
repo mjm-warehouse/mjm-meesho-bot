@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MJM Scanner</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body style="font-family: sans-serif; text-align:center; padding-top: 60px; background:#f5f5f5;">
+  <h3 id="msg">Camera khul raha hai...</h3>
+  <p style="color:#666; font-size: 14px;">Barcode/QR ko camera ke saamne rakho.</p>
+
+  <script>
+    var tg = window.Telegram.WebApp;
+    tg.ready();
+    tg.expand();
+
+    var params = new URLSearchParams(window.location.search);
+    var step = params.get('step') || 'unknown';
+
+    function sendResult(text) {
+      tg.sendData(JSON.stringify({ step: step, value: text }));
+      tg.close();
+    }
+
+    if (tg.showScanQrPopup) {
+      tg.showScanQrPopup({ text: 'Barcode/QR scan karo' }, function (text) {
+        sendResult(text);
+        return true;
+      });
+    } else {
+      document.getElementById('msg').innerText =
+        'Yeh Telegram app camera scanner support nahi karta. Telegram app update karo, ya chat mein manually type karo.';
+    }
+  </script>
+</body>
+</html>
