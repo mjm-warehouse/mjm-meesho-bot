@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>MJM Warehouse Hub</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+</head>
+<body class="bg-gray-100 text-gray-900 min-h-screen pb-20">
+
+  <header class="bg-white shadow px-4 py-3 sticky top-0 z-10 flex items-center justify-between">
+    <h1 class="text-lg font-bold">📦 MJM Warehouse Hub</h1>
+    <span id="roleTag" class="text-xs bg-gray-200 px-2 py-1 rounded-full"></span>
+  </header>
+
+  <!-- Tab bar -->
+  <nav class="bg-white border-b flex sticky top-[52px] z-10 text-sm">
+    <button class="tab-btn flex-1 py-2 font-semibold border-b-2 border-blue-600" data-tab="home">🏠 Home</button>
+    <button class="tab-btn flex-1 py-2 text-gray-500" data-tab="inventory">📦 Inventory</button>
+    <button class="tab-btn flex-1 py-2 text-gray-500" data-tab="pnl">💰 P&amp;L</button>
+    <button class="tab-btn flex-1 py-2 text-gray-500" data-tab="lookup">🔍 Lookup</button>
+  </nav>
+
+  <main class="p-4 max-w-lg mx-auto">
+
+    <!-- HOME TAB -->
+    <section id="tab-home" class="tab-panel space-y-4">
+      <div class="grid grid-cols-2 gap-3">
+        <div class="bg-white rounded-xl p-3 shadow"><p class="text-xs text-gray-500">Ready to Ship</p><p id="statReady" class="text-2xl font-bold">–</p></div>
+        <div class="bg-white rounded-xl p-3 shadow"><p class="text-xs text-gray-500">Packed</p><p id="statPacked" class="text-2xl font-bold">–</p></div>
+        <div class="bg-white rounded-xl p-3 shadow"><p class="text-xs text-gray-500">Dispatched</p><p id="statDispatched" class="text-2xl font-bold">–</p></div>
+        <div class="bg-white rounded-xl p-3 shadow"><p class="text-xs text-gray-500">RTO / Tampered</p><p id="statRto" class="text-2xl font-bold">–</p></div>
+        <div class="bg-white rounded-xl p-3 shadow col-span-2"><p class="text-xs text-gray-500">Pending Payout</p><p id="statPayout" class="text-xl font-bold">–</p><p id="statPayoutDate" class="text-xs text-gray-400"></p></div>
+      </div>
+
+      <div class="grid grid-cols-2 gap-3">
+        <button onclick="openScanner('dispatch')" class="bg-blue-600 text-white rounded-xl py-3 font-semibold shadow">📷 Scan Dispatch</button>
+        <button onclick="openScanner('return')" class="bg-orange-600 text-white rounded-xl py-3 font-semibold shadow">🔄 Scan Return</button>
+      </div>
+
+      <div class="bg-white rounded-xl p-3 shadow">
+        <h2 class="font-semibold mb-2">⏳ Pending Claims</h2>
+        <div id="claimsList" class="text-sm text-gray-600 space-y-1"><p>Loading...</p></div>
+      </div>
+    </section>
+
+    <!-- INVENTORY TAB -->
+    <section id="tab-inventory" class="tab-panel hidden">
+      <div class="bg-white rounded-xl p-3 shadow">
+        <h2 class="font-semibold mb-2">📦 Live Stock</h2>
+        <div id="inventoryList" class="text-sm space-y-2"><p class="text-gray-400">Loading...</p></div>
+      </div>
+    </section>
+
+    <!-- P&L TAB -->
+    <section id="tab-pnl" class="tab-panel hidden space-y-3">
+      <div class="grid grid-cols-3 gap-2 text-xs">
+        <button class="pnl-filter bg-white border rounded-lg py-2" data-period="today">Today</button>
+        <button class="pnl-filter bg-white border rounded-lg py-2" data-period="this_week">This Week</button>
+        <button class="pnl-filter bg-white border rounded-lg py-2" data-period="this_month">This Month</button>
+        <button class="pnl-filter bg-white border rounded-lg py-2" data-period="last_3_months">Last 3M</button>
+        <button class="pnl-filter bg-white border rounded-lg py-2" data-period="last_6_months">Last 6M</button>
+        <button class="pnl-filter bg-blue-600 text-white rounded-lg py-2" data-period="">All Time</button>
+      </div>
+      <div id="pnlDetails" class="bg-white rounded-xl p-4 shadow text-sm space-y-1">
+        <p class="text-gray-400">Loading...</p>
+      </div>
+    </section>
+
+    <!-- LOOKUP TAB -->
+    <section id="tab-lookup" class="tab-panel hidden">
+      <div class="bg-white rounded-xl p-3 shadow">
+        <h2 class="font-semibold mb-2">🔍 Customer Risk Lookup</h2>
+        <input id="lookupInput" type="text" placeholder="Name or Pincode" class="w-full border rounded-lg px-3 py-2 text-sm mb-2">
+        <button onclick="doLookup()" class="w-full bg-gray-800 text-white rounded-lg py-2 text-sm">Search</button>
+        <div id="lookupResults" class="mt-3 text-sm space-y-2"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scanner modal -->
+  <div id="scannerModal" class="fixed inset-0 bg-black/80 hidden z-50 flex flex-col">
+    <div class="p-3 flex justify-between items-center text-white">
+      <span id="scannerTitle" class="font-semibold"></span>
+      <button onclick="closeScanner()" class="text-white text-2xl leading-none">&times;</button>
+    </div>
+    <div id="qr-reader" class="flex-1"></div>
+    <div id="scannerStatus" class="p-4 text-white text-sm text-center"></div>
+    <div id="scannerManualEntry" class="p-4">
+      <input id="manualInput" type="text" placeholder="Ya yahan type karo" class="w-full rounded-lg px-3 py-2 text-sm mb-2">
+      <button onclick="submitManual()" class="w-full bg-blue-600 text-white rounded-lg py-2 text-sm">Submit</button>
+    </div>
+  </div>
+
+<script>
+  const tg = window.Telegram.WebApp;
+  tg.ready();
+  tg.expand();
+
+  const initData = tg.initData || '';
+  document.getElementById('roleTag').innerText = (tg.initDataUnsafe && tg.initDataUnsafe.user) ? 'Connected' : 'Not in Telegram';
+
+  async function api(path, options = {}) {
+    const res = await fetch(path, {
+      ...options,
+      headers: { 'Content-Type': 'application/json', 'x-telegram-init-data': initData, ...(options.headers || {}) },
+    });
+    if (!res.ok) throw new Error((await res.json().catch(() => ({}))).error || `HTTP ${res.status}`);
+    return res.json();
+  }
+
+  function haptic(type) {
+    if (!tg.HapticFeedback) return;
+    if (type === 'success') tg.HapticFeedback.notificationOccurred('success');
+    else if (type === 'error') tg.HapticFeedback.notificationOccurred('error');
+    else tg.HapticFeedback.impactOccurred('light');
+  }
+
+  // ---- Tabs ----
+  document.querySelectorAll('.tab-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach((b) => b.classList.remove('border-b-2', 'border-blue-600', 'font-semibold'));
+      document.querySelectorAll('.tab-btn').forEach((b) => b.classList.add('text-gray-500'));
+      btn.classList.add('border-b-2', 'border-blue-600', 'font-semibold');
+      btn.classList.remove('text-gray-500');
+      document.querySelectorAll('.tab-panel').forEach((p) => p.classList.add('hidden'));
+      document.getElementById(`tab-${btn.dataset.tab}`).classList.remove('hidden');
+      if (btn.dataset.tab === 'inventory') loadInventory();
+      if (btn.dataset.tab === 'pnl') loadPnl('');
+    });
+  });
+
+  // ---- Home: summary ----
+  async function loadSummary() {
+    try {
+      const s = await api('/api/dashboard/summary');
+      document.getElementById('statReady').innerText = s.orders.readyToShip;
+      document.getElementById('statPacked').innerText = s.orders.packed;
+      document.getElementById('statDispatched').innerText = s.orders.dispatched;
+      document.getElementById('statRto').innerText = `${s.returns.rto} / ${s.returns.tampered}`;
+      document.getElementById('statPayout').innerText = `₹${s.payout.pending.toFixed(2)}`;
+      document.getElementById('statPayoutDate').innerText = s.payout.nextDate ? `Next: ${s.payout.nextDate}` : '';
+
+      const claimsEl = document.getElementById('claimsList');
+      claimsEl.innerHTML = s.claims.list.length
+        ? s.claims.list.map(c => `<div class="flex justify-between border-b py-1"><span>${c.subOrderId}</span><span class="text-red-600">${c.daysLeft}d left</span></div>`).join('')
+        : '<p class="text-green-600">✅ No pending claims</p>';
+    } catch (err) { console.error(err); }
+  }
+
+  // ---- Inventory tab ----
+  async function loadInventory() {
+    const el = document.getElementById('inventoryList');
+    el.innerHTML = '<p class="text-gray-400">Loading...</p>';
+    try {
+      const { items } = await api('/api/inventory/list');
+      el.innerHTML = items.length ? items.map((it) => `
+        <div class="flex justify-between items-center border-b py-2 ${it.lowStock ? 'bg-red-50' : ''}">
+          <div>
+            <p class="font-semibold">${it.sku}</p>
+            <p class="text-xs text-gray-500">${it.productName || ''} | Listed: ₹${it.listingPrice ?? '-'}</p>
+          </div>
+          <div class="text-right">
+            <p class="font-bold ${it.lowStock ? 'text-red-600' : 'text-green-700'}">${it.currentBalance ?? '-'}</p>
+            <p class="text-xs text-gray-400">in stock</p>
+          </div>
+        </div>
+        ${it.lowStock ? '<p class="text-xs text-red-600 -mt-1 mb-1">⚠️ Low stock</p>' : ''}
+      `).join('') : '<p class="text-gray-400">Koi SKU set up nahi hai. setcost command se add karo.</p>';
+    } catch (err) {
+      el.innerHTML = `<p class="text-red-600">${err.message}</p>`;
+    }
+  }
+
+  // ---- P&L tab ----
+  document.querySelectorAll('.pnl-filter').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.pnl-filter').forEach((b) => { b.classList.remove('bg-blue-600', 'text-white'); b.classList.add('bg-white'); });
+      btn.classList.add('bg-blue-600', 'text-white');
+      btn.classList.remove('bg-white');
+      loadPnl(btn.dataset.period);
+    });
+  });
+
+  async function loadPnl(period) {
+    const el = document.getElementById('pnlDetails');
+    el.innerHTML = '<p class="text-gray-400">Loading...</p>';
+    try {
+      const r = await api(`/api/dashboard/pnl?period=${encodeURIComponent(period || '')}`);
+      el.innerHTML = `
+        <p class="text-xs text-gray-400">${r.range ? `${r.range.from} → ${r.range.to}` : 'All time'}</p>
+        <div class="grid grid-cols-2 gap-2 py-2 border-b">
+          <div><p class="text-xs text-gray-500">Dispatched</p><p class="font-bold">${r.volume.dispatched}</p></div>
+          <div><p class="text-xs text-gray-500">Delivered</p><p class="font-bold">${r.volume.delivered}</p></div>
+          <div><p class="text-xs text-gray-500">RTO</p><p class="font-bold">${r.volume.rto}</p></div>
+          <div><p class="text-xs text-gray-500">Tampered</p><p class="font-bold text-red-600">${r.volume.tampered}</p></div>
+        </div>
+        <div class="pt-2 space-y-1">
+          <p class="flex justify-between"><span>Gross Sales</span><span>₹${r.financials.grossSales.toFixed(2)}</span></p>
+          <p class="flex justify-between"><span>Actual Net Settlement</span><span>₹${r.financials.actualNetSettlement.toFixed(2)}</span></p>
+          <p class="flex justify-between"><span>Product+Packaging Cost</span><span>₹${r.financials.totalCost.toFixed(2)}</span></p>
+          <p class="flex justify-between"><span>Dead Losses</span><span class="text-red-600">₹${r.financials.deadLosses.toFixed(2)}</span></p>
+          <p class="flex justify-between font-bold text-green-700 border-t pt-1 mt-1"><span>Net Real Profit</span><span>₹${r.financials.netRealProfit.toFixed(2)}</span></p>
+        </div>`;
+    } catch (err) {
+      el.innerHTML = `<p class="text-red-600">${err.message}</p>`;
+    }
+  }
+
+  // ---- Lookup tab ----
+  async function doLookup() {
+    const q = document.getElementById('lookupInput').value;
+    const resultsEl = document.getElementById('lookupResults');
+    resultsEl.innerHTML = '<p class="text-gray-400">Searching...</p>';
+    try {
+      const { results } = await api(`/api/customer/lookup?q=${encodeURIComponent(q)}`);
+      resultsEl.innerHTML = results.length
+        ? results.map(r => `
+            <div class="border rounded-lg p-2">
+              <p class="font-semibold">${r['Customer Name'] || '-'} (${r['Pincode'] || '-'})</p>
+              <p class="text-xs">${r['Customer Tag'] || r['Risk Level'] || ''} | Orders: ${r['Total Orders'] || 0} | Fraud: ${r['Fraud Returns'] || 0} | RTO: ${r['RTO Count'] || 0}</p>
+            </div>
+          `).join('')
+        : '<p class="text-gray-400">No matches.</p>';
+    } catch (err) {
+      resultsEl.innerHTML = `<p class="text-red-600">${err.message}</p>`;
+    }
+  }
+
+  // ---- Scanner (dispatch/return) ----
+  let html5QrCode = null;
+  let scanMode = null;
+  let scanStep = null;
+  let scanData = {};
+
+  function openScanner(mode) {
+    scanMode = mode; scanData = {}; scanStep = 'awb';
+    document.getElementById('scannerTitle').innerText = mode === 'dispatch' ? '📦 Scan AWB (Step 1/2)' : '🔄 Scan Reverse AWB';
+    document.getElementById('scannerStatus').innerText = '';
+    document.getElementById('scannerModal').classList.remove('hidden');
+    startCamera();
+  }
+
+  function closeScanner() {
+    document.getElementById('scannerModal').classList.add('hidden');
+    if (html5QrCode) { html5QrCode.stop().catch(() => {}); html5QrCode = null; }
+  }
+
+  function startCamera() {
+    if (html5QrCode) html5QrCode.stop().catch(() => {});
+    html5QrCode = new Html5Qrcode('qr-reader');
+    html5QrCode.start(
+      { facingMode: 'environment' },
+      { fps: 10, qrbox: 250 },
+      (decodedText) => { haptic('light'); handleScanValue(decodedText); },
+      () => {}
+    ).catch(() => { document.getElementById('scannerStatus').innerText = 'Camera not available - manual entry use karo neeche.'; });
+  }
+
+  function submitManual() {
+    const val = document.getElementById('manualInput').value.trim();
+    if (val) { document.getElementById('manualInput').value = ''; handleScanValue(val); }
+  }
+
+  async function handleScanValue(value) {
+    if (scanMode === 'dispatch') {
+      if (scanStep === 'awb') {
+        scanData.awb = value; scanStep = 'packet';
+        document.getElementById('scannerTitle').innerText = '📦 Scan Packet QR (Step 2/2)';
+        document.getElementById('scannerStatus').innerText = `AWB: ${value}`;
+        return;
+      }
+      if (scanStep === 'packet') {
+        scanData.packetCode = value;
+        try {
+          const result = await api('/api/scan/dispatch', { method: 'POST', body: JSON.stringify(scanData) });
+          document.getElementById('scannerStatus').innerText = result.reply;
+          if (result.reply.includes('Already Linked')) showRelinkPrompt();
+          else { haptic('success'); closeScanner(); loadSummary(); loadInventory(); }
+        } catch (err) { haptic('error'); document.getElementById('scannerStatus').innerText = err.message; }
+      }
+    } else if (scanMode === 'return') {
+      if (scanStep === 'awb') {
+        scanData.awb = value; scanStep = 'condition';
+        if (html5QrCode) html5QrCode.stop().catch(() => {});
+        showConditionButtons();
+      }
+    }
+  }
+
+  function showConditionButtons() {
+    document.getElementById('scannerTitle').innerText = `AWB: ${scanData.awb} - Condition?`;
+    document.getElementById('scannerStatus').innerHTML = `
+      <div class="grid grid-cols-3 gap-2 mt-2">
+        <button onclick="submitReturnCondition('OK')" class="bg-green-600 py-2 rounded-lg">✅ OK</button>
+        <button onclick="submitReturnCondition('TAMPERED')" class="bg-red-600 py-2 rounded-lg">⚠️ TAMPERED</button>
+        <button onclick="submitReturnCondition('WRONG_ITEM/EMPTY')" class="bg-yellow-600 py-2 rounded-lg">🔁 Wrong/Empty</button>
+      </div>`;
+  }
+
+  async function submitReturnCondition(condition) {
+    scanData.condition = condition;
+    let subOrderId = null;
+    if (condition === 'TAMPERED') subOrderId = prompt('Sub Order ID (ya khaali chhodo):') || 'skip';
+    try {
+      const result = await api('/api/scan/return', { method: 'POST', body: JSON.stringify({ ...scanData, subOrderId }) });
+      document.getElementById('scannerStatus').innerText = result.reply;
+      haptic('success');
+      setTimeout(() => { closeScanner(); loadSummary(); loadInventory(); }, 1500);
+    } catch (err) { haptic('error'); document.getElementById('scannerStatus').innerText = err.message; }
+  }
+
+  function showRelinkPrompt() {
+    if (html5QrCode) html5QrCode.stop().catch(() => {});
+    document.getElementById('scannerStatus').innerHTML += `
+      <div class="grid grid-cols-2 gap-2 mt-2">
+        <button onclick="confirmRelink(true)" class="bg-green-600 py-2 rounded-lg">✅ Confirm Overwrite</button>
+        <button onclick="confirmRelink(false)" class="bg-gray-600 py-2 rounded-lg">❌ Cancel</button>
+      </div>`;
+  }
+
+  async function confirmRelink(confirm) {
+    try {
+      const result = await api('/api/scan/relink', { method: 'POST', body: JSON.stringify({ confirm }) });
+      document.getElementById('scannerStatus').innerText = result.reply;
+      haptic('success');
+      setTimeout(() => { closeScanner(); loadSummary(); }, 1500);
+    } catch (err) { document.getElementById('scannerStatus').innerText = err.message; }
+  }
+
+  loadSummary();
+  setInterval(loadSummary, 30000);
+</script>
+</body>
+</html>
