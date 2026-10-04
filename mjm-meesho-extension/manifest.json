@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "MJM Meesho Order Sync",
+  "version": "1.0",
+  "description": "Syncs Meesho supplier orders/returns/payments to the MJM backend.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": [
+    "https://supplier.meesho.com/*",
+    "https://*.onrender.com/*"
+  ],
+  "action": { "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://supplier.meesho.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

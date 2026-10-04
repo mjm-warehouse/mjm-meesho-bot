@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 240px; font-family: Arial, sans-serif; padding: 10px; }
+    label { font-size: 11px; color: #555; }
+    input, button { width: 100%; margin-bottom: 8px; padding: 6px; box-sizing: border-box; }
+    button { background: #6c5ce7; color: white; border: none; cursor: pointer; border-radius: 4px; }
+    button:hover { background: #5b4cc4; }
+    #status { font-size: 11px; color: #333; margin-top: 5px; }
+  </style>
+</head>
+<body>
+  <h3>MJM Sync</h3>
+
+  <label>Backend URL:</label>
+  <input type="text" id="backendUrl" value="https://mjm-meesho-bot.onrender.com">
+
+  <label>SYNC_API_KEY (from your .env):</label>
+  <input type="password" id="apiKey" placeholder="paste your SYNC_API_KEY">
+
+  <button id="saveBtn">Save Settings</button>
+  <button id="syncBtn">Sync Current Page</button>
+  <div id="status"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
