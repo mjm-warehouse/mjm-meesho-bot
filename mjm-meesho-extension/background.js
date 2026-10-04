@@ -90,27 +90,69 @@ async function handleInterceptedPayload(url, payload) {
     }
   }
 
-  // 3. PAYMENTS & PAYOUTS EXTRACTION
+  // 3. PAYMENTS EXTRACTION
   if (url.includes('payments') || url.includes('payouts')) {
     let paymentList = [];
-    if (payload.data && Array.isArray(payload.data.payments)) paymentList = payload.data.payments;
-    else if (payload.data && Array.isArray(payload.data.payouts)) paymentList = payload.data.payouts;
-    else if (payload.data && Array.isArray(payload.data.list)) paymentList = payload.data.list;
-    else if (Array.isArray(payload.data)) paymentList = payload.data;
-    else if (Array.isArray(payload.payments)) paymentList = payload.payments;
+    const rawData = payload.data || payload;
 
-    if (paymentList.length) {
-      const payments = paymentList.map(item => ({
-        paymentDate: item.date || item.payment_date || item.date_iso || new Date().toISOString().slice(0, 10),
-        subOrderId: String(item.sub_order_id || item.subOrderId || item.transferId || '').trim(),
-        liveStatus: item.status || 'Settled',
-        grossSale: Number(item.netOrderAmount || item.orderAmount || item.gross_sale || 0),
-        marketplaceFee: Number(item.marketplace_fee || item.netPlatformRecovery || 0),
-        returnShippingFee: Number(item.return_shipping_fee || item.shipping_fee || 0),
-        netSettlement: Number(item.netAmount || item.net_settlement || item.amount || 0),
-        bankStatus: item.bank_status || 'Credited',
-        transferId: item.transferId || item.utr || ''
-      }));
+    if (Array.isArray(rawData.dayWisePayments)) {
+      paymentList = rawData.dayWisePayments;
+    } else if (Array.isArray(rawData.payments)) {
+      paymentList = rawData.payments;
+    } else if (Array.isArray(rawData.payouts)) {
+      paymentList = rawData.payouts;
+    } else if (Array.isArray(rawData.list)) {
+      paymentList = rawData.list;
+    } else if (Array.isArray(rawData)) {
+      paymentList = rawData;
+    } else if (rawData && typeof rawData === 'object') {
+      const possibleArr = Object.values(rawData).find(v => Array.isArray(v));
+      if (possibleArr) paymentList = possibleArr;
+    }
+
+    if (paymentList.length > 0) {
+      const parseAmt = (val) => {
+        if (val === undefined || val === null) return 0;
+        const cleaned = String(val).replace(/[^0-9.-]+/g, '');
+        return parseFloat(cleaned) || 0;
+      };
+
+      const payments = paymentList.map(item => {
+        let pDate = item.payment_date || item.date || item.date_iso || item.paymentDate || '';
+        if (pDate && !pDate.includes('-')) {
+          const d = new Date(pDate);
+          if (!isNaN(d.getTime())) pDate = d.toISOString().slice(0, 10);
+        } else if (pDate) {
+          pDate = String(pDate).slice(0, 10);
+        } else {
+          pDate = new Date().toISOString().slice(0, 10);
+        }
+
+        const sId = `PAY-${pDate}`;
+        const gross = parseAmt(item.netOrderAmount ?? item.orderAmount ?? item.gross_sale ?? item.totalOrderAmount);
+        const net = parseAmt(item.netAmount ?? item.net_settlement ?? item.amount ?? item.totalNetAmount);
+
+        let fee = 0;
+        if (item.netPlatformRecovery && typeof item.netPlatformRecovery === 'object') {
+          fee = parseAmt(item.netPlatformRecovery.adsCost || 0) + parseAmt(item.netPlatformRecovery.programCosts || 0);
+        } else {
+          fee = parseAmt(item.marketplace_fee || item.netPlatformRecovery || 0);
+        }
+
+        return {
+          paymentDate: pDate,
+          subOrderId: sId,
+          liveStatus: item.status || 'Settled',
+          grossSale: gross,
+          marketplaceFee: fee,
+          returnShippingFee: parseAmt(item.return_shipping_fee || item.shipping_fee || 0),
+          netSettlement: net,
+          bankStatus: item.bank_status || 'Completed',
+          transferId: item.transferId || item.utr || ''
+        };
+      }).filter(p => p.grossSale > 0 || p.netSettlement > 0);
+
+      console.log('[MJM Background] Extracted Parsed Payments:', payments);
 
       if (payments.length > 0) {
         return await syncWithBackend([], [], payments);
