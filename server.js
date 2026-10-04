@@ -1,4 +1,5 @@
 require('dotenv').config();
+const { initRetryWorker } = require('./lib/claimPipeline/retryWorker');
 const path = require('path');
 const express = require('express');
 const TelegramBot = require('node-telegram-bot-api');
@@ -21,6 +22,10 @@ const { listInventory } = require('./lib/inventoryEngine');
 const app = express();
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public'))); // serves /scanner.html and /dashboard.html
+
+// ---- RENDER COLD START / HEALTH PING ENDPOINTS ----
+app.get('/health', (req, res) => res.status(200).json({ status: 'ok', timestamp: Date.now() }));
+app.get('/ping', (req, res) => res.status(200).send('pong'));
 
 const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const bot = new TelegramBot(TOKEN); // webhook mode: no polling, we call sendMessage ourselves
@@ -327,4 +332,7 @@ app.post('/api/meesho/sync', requireSyncApiKey, async (req, res) => {
 app.get('/', (req, res) => res.send('MJM Meesho Bot is running.'));
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server listening on port ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
+  initRetryWorker();
+});
