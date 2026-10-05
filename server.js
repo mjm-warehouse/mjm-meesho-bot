@@ -19,8 +19,8 @@ const { listInventory } = require('./lib/inventoryEngine');
 const { lookupCustomer } = require('./lib/customerLookup');
 const scanner = require('./lib/scannerEngine');
 
-// Google Sheets Client for Costing Engine
-const { getSheetsClient } = require('./lib/sheets');
+// Google Sheets Helper (Using existing sheets helper)
+const { readTab } = require('./lib/sheets');
 
 const app = express();
 app.use(bodyParser.json());
@@ -42,24 +42,16 @@ async function loadSkuCostingMaster(force = false) {
     return skuCostingCache;
   }
 
-  const spreadsheetId = process.env.GOOGLE_SHEET_ID || process.env.GOOGLE_SPREADSHEET_ID;
-  if (!spreadsheetId) {
-    console.warn('⚠️ GOOGLE_SHEET_ID ya GOOGLE_SPREADSHEET_ID missing in environment variables.');
-    return skuCostingCache;
-  }
-
   try {
-    const sheetsClient = await getSheetsClient();
-    const res = await sheetsClient.spreadsheets.values.get({
-      spreadsheetId,
-      range: 'SKU_Master_Costing!A2:O65',
-    });
+    const rows = await readTab('SKU_Master_Costing');
+    if (!rows || rows.length <= 1) return skuCostingCache;
 
-    const rows = res.data.values || [];
     const newCache = new Map();
 
-    rows.forEach((r) => {
-      if (!r || !r[1]) return; // Col B: SKU ID
+    // Row 0 is header, data starts at index 1
+    for (let i = 1; i < rows.length; i++) {
+      const r = rows[i];
+      if (!r || !r[1]) continue; // Col B: SKU ID
       const sku = String(r[1]).trim();
 
       const customerPrice = parseFloat(r[4]) || 0;    // Col E
@@ -72,7 +64,7 @@ async function loadSkuCostingMaster(force = false) {
       // Calculate Influencer Cost
       let influencerCost = 0;
       if (influencerComm > 0) {
-        influencerCost = influencerComm < 1 ? (bankPayout * influencerComm) : influencerComm;
+        influencerCost = influencerComm < 1 ? bankPayout * influencerComm : influencerComm;
       }
 
       const totalCost = purchaseCost + packagingCost + influencerCost;
@@ -95,7 +87,7 @@ async function loadSkuCostingMaster(force = false) {
         profitMargin: Math.round(profitMargin * 10) / 10,
         stock: parseInt(r[14]) || 0,
       });
-    });
+    }
 
     skuCostingCache = newCache;
     lastCostingFetch = now;
@@ -108,7 +100,7 @@ async function loadSkuCostingMaster(force = false) {
 }
 
 // Initial fetch on server start
-loadSkuCostingMaster().catch((e) => console.error('Costing Engine Init Error:', e.message));
+loadSkuCostingMaster().catch(() => {});
 
 // Helper function to calculate PnL for any given SKU
 function getSkuCosting(skuId) {
