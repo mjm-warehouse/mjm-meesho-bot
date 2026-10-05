@@ -253,7 +253,7 @@ async function handleDocument(chatId, document) {
     }
   }
 
-  return bot.sendMessage(chatId, '⚠️ Please send a PDF, Excel (.xlsx/.csv), or a ZIP file.');
+  return bot.sendMessage(chatId, '⚠️️ Please send a PDF, Excel (.xlsx/.csv), or a ZIP file.');
 }
 
 async function handlePdfDocument(chatId, document) {
@@ -264,7 +264,7 @@ async function handlePdfDocument(chatId, document) {
 
     const stillNeedsOcr = pages.filter((p) => p.needsOcr);
     const ocrRecovered = pages.filter((p) => p.ocrApplied).length;
-    if (ocrRecovered) await bot.sendMessage(chatId, `ℹ️ Recovered ${ocrRecovered} scanned page(s) via OCR fallback.`);
+    if (ocrRecovered) await bot.sendMessage(chatId, `ℹ️️ Recovered ${ocrRecovered} scanned page(s) via OCR fallback.`);
     if (stillNeedsOcr.length) {
       await bot.sendMessage(chatId, `⚠️ ${stillNeedsOcr.length} page(s) had no extractable text even after OCR fallback — skipped.`);
     }
