@@ -18,7 +18,7 @@ const { getPnlForRange } = require('./lib/analytics');
 const { listInventory } = require('./lib/inventoryEngine');
 const { lookupCustomer } = require('./lib/customerLookup');
 const scanner = require('./lib/scannerEngine');
-const { getSheetsClient } = require('./lib/sheets');
+const { readTab } = require('./lib/sheets');
 
 const app = express();
 app.use(bodyParser.json());
@@ -28,11 +28,11 @@ const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const bot = new TelegramBot(TOKEN);
 
 // ==========================================
-// DYNAMIC SKU COSTING & LIVE PnL ENGINE
+// DYNAMIC SKU COSTING & LIVE PnL ENGINE (15-COL)
 // ==========================================
 let skuCostingCache = new Map();
 let lastCostingFetch = 0;
-const COSTING_CACHE_TTL = 10 * 60 * 1000; // 10 minutes cache
+const COSTING_CACHE_TTL = 10 * 60 * 1000; // 10 mins cache
 
 async function loadSkuCostingMaster(force = false) {
   const now = Date.now();
@@ -40,34 +40,29 @@ async function loadSkuCostingMaster(force = false) {
     return skuCostingCache;
   }
 
-  const spreadsheetId = process.env.GOOGLE_SHEET_ID || process.env.GOOGLE_SPREADSHEET_ID;
-  if (!spreadsheetId) {
-    console.warn('⚠️ GOOGLE_SHEET_ID missing in environment variables.');
-    return skuCostingCache;
-  }
-
   try {
-    const sheets = await getSheetsClient();
-    const res = await sheets.spreadsheets.values.get({
-      spreadsheetId,
-      range: 'SKU_Master_Costing!A2:O65',
-    });
+    const rows = await readTab('SKU_Master_Costing');
+    if (!rows || rows.length < 2) {
+      console.warn('⚠️ No data found in SKU_Master_Costing tab.');
+      return skuCostingCache;
+    }
 
-    const rows = res.data.values || [];
     const newCache = new Map();
+    // Rows 1 to N (skipping header row 0)
+    for (let i = 1; i < rows.length; i++) {
+      const r = rows[i];
+      if (!r || !r[1]) continue; // Col B: SKU ID
 
-    rows.forEach((r) => {
-      if (!r || !r[1]) return; // Col B: SKU ID
       const sku = String(r[1]).trim();
+      if (!sku) continue;
 
       const customerPrice = parseFloat(r[4]) || 0;    // Col E
       const bankPayout = parseFloat(r[5]) || 0;       // Col F
       const meeshoShipping = parseFloat(r[6]) || 0;   // Col G
       const purchaseCost = parseFloat(r[7]) || 0;     // Col H
       const packagingCost = parseFloat(r[8]) || 0;    // Col I
-      const influencerComm = parseFloat(r[9]) || 0;   // Col J (% or flat Rs)
+      const influencerComm = parseFloat(r[9]) || 0;   // Col J
 
-      // Calculate Influencer Cost
       let influencerCost = 0;
       if (influencerComm > 0) {
         influencerCost = influencerComm < 1 ? bankPayout * influencerComm : influencerComm;
@@ -91,9 +86,9 @@ async function loadSkuCostingMaster(force = false) {
         totalCost: Math.round(totalCost * 100) / 100,
         netProfit: Math.round(netProfit * 100) / 100,
         profitMargin: Math.round(profitMargin * 10) / 10,
-        stock: parseInt(r[14]) || 0,
+        stock: parseInt(r[14]) || 0, // Col O: Current Stock
       });
-    });
+    }
 
     skuCostingCache = newCache;
     lastCostingFetch = now;
@@ -105,17 +100,16 @@ async function loadSkuCostingMaster(force = false) {
   }
 }
 
-// Initial fetch on server start
+// Initial fetch on server boot
 loadSkuCostingMaster().catch((e) => console.error(e));
 
 // Helper function to calculate PnL for any given SKU
 function getSkuCosting(skuId) {
   if (!skuId) return null;
-  const cleanSku = String(skuId).trim();
-  return skuCostingCache.get(cleanSku) || null;
+  return skuCostingCache.get(String(skuId).trim()) || null;
 }
 
-// ---- FIX FOR WEBHOOK TIMEOUT & OWNER ALERTS ----
+// ---- NOTIFY OWNERS LOW STOCK ----
 async function notifyOwnersLowStock(alerts) {
   if (!alerts || !alerts.length) return;
   const ownerIds = (process.env.OWNER_TELEGRAM_IDS || '')
@@ -253,7 +247,7 @@ async function handleDocument(chatId, document) {
     }
   }
 
-  return bot.sendMessage(chatId, '⚠️️ Please send a PDF, Excel (.xlsx/.csv), or a ZIP file.');
+  return bot.sendMessage(chatId, '⚠️ Please send a PDF, Excel (.xlsx/.csv), or a ZIP file.');
 }
 
 async function handlePdfDocument(chatId, document) {
@@ -264,9 +258,9 @@ async function handlePdfDocument(chatId, document) {
 
     const stillNeedsOcr = pages.filter((p) => p.needsOcr);
     const ocrRecovered = pages.filter((p) => p.ocrApplied).length;
-    if (ocrRecovered) await bot.sendMessage(chatId, `ℹ️️ Recovered ${ocrRecovered} scanned page(s) via OCR fallback.`);
+    if (ocrRecovered) await bot.sendMessage(chatId, `ℹ️ Recovered ${ocrRecovered} scanned page(s) via OCR fallback.`);
     if (stillNeedsOcr.length) {
-      await bot.sendMessage(chatId, `⚠️ ${stillNeedsOcr.length} page(s) had no extractable text even after OCR fallback — skipped.`);
+      await bot.sendMessage(chatId, `⚠️️ ${stillNeedsOcr.length} page(s) had no extractable text even after OCR fallback — skipped.`);
     }
 
     const usablePages = pages.filter((p) => !p.needsOcr);

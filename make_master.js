@@ -1,0 +1,1 @@
+const XLSX = require('xlsx');const data = JCON.parse(fs.readFileSync('./data.json'));
