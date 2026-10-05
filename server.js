@@ -18,6 +18,8 @@ const { getPnlForRange } = require('./lib/analytics');
 const { listInventory } = require('./lib/inventoryEngine');
 const { lookupCustomer } = require('./lib/customerLookup');
 const scanner = require('./lib/scannerEngine');
+
+// Google Sheets Client for Costing Engine
 const { getSheetsClient } = require('./lib/sheets');
 
 const app = express();
@@ -42,13 +44,13 @@ async function loadSkuCostingMaster(force = false) {
 
   const spreadsheetId = process.env.GOOGLE_SHEET_ID || process.env.GOOGLE_SPREADSHEET_ID;
   if (!spreadsheetId) {
-    console.warn('⚠️ GOOGLE_SHEET_ID missing for Costing Engine.');
+    console.warn('⚠️ GOOGLE_SHEET_ID ya GOOGLE_SPREADSHEET_ID missing in environment variables.');
     return skuCostingCache;
   }
 
   try {
-    const sheets = await getSheetsClient();
-    const res = await sheets.spreadsheets.values.get({
+    const sheetsClient = await getSheetsClient();
+    const res = await sheetsClient.spreadsheets.values.get({
       spreadsheetId,
       range: 'SKU_Master_Costing!A2:O65',
     });
@@ -70,7 +72,7 @@ async function loadSkuCostingMaster(force = false) {
       // Calculate Influencer Cost
       let influencerCost = 0;
       if (influencerComm > 0) {
-        influencerCost = influencerComm < 1 ? bankPayout * influencerComm : influencerComm;
+        influencerCost = influencerComm < 1 ? (bankPayout * influencerComm) : influencerComm;
       }
 
       const totalCost = purchaseCost + packagingCost + influencerCost;
@@ -106,7 +108,7 @@ async function loadSkuCostingMaster(force = false) {
 }
 
 // Initial fetch on server start
-loadSkuCostingMaster().catch((e) => console.error('Costing init error:', e.message));
+loadSkuCostingMaster().catch((e) => console.error('Costing Engine Init Error:', e.message));
 
 // Helper function to calculate PnL for any given SKU
 function getSkuCosting(skuId) {
@@ -266,7 +268,7 @@ async function handlePdfDocument(chatId, document) {
     const ocrRecovered = pages.filter((p) => p.ocrApplied).length;
     if (ocrRecovered) await bot.sendMessage(chatId, `ℹ️ Recovered ${ocrRecovered} scanned page(s) via OCR fallback.`);
     if (stillNeedsOcr.length) {
-      await bot.sendMessage(chatId, `⚠️️ ${stillNeedsOcr.length} page(s) had no extractable text even after OCR fallback — skipped.`);
+      await bot.sendMessage(chatId, `⚠️ ${stillNeedsOcr.length} page(s) had no extractable text even after OCR fallback — skipped.`);
     }
 
     const usablePages = pages.filter((p) => !p.needsOcr);
