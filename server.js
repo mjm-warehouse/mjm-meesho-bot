@@ -18,20 +18,7 @@ const { getPnlForRange } = require('./lib/analytics');
 const { listInventory } = require('./lib/inventoryEngine');
 const { lookupCustomer } = require('./lib/customerLookup');
 const scanner = require('./lib/scannerEngine');
-
-// Google Sheets Client for Costing Engine
-let sheetsClient = null;
-try {
-  const { getSheetsClient } = require('./lib/sheets');
-  sheetsClient = getSheetsClient();
-} catch (e) {
-  try {
-    const { sheets } = require('./lib/googleSheets');
-    sheetsClient = sheets;
-  } catch (err) {
-    console.warn('⚠️ Google Sheets client could not be auto-imported for Costing Engine:', err.message);
-  }
-}
+const { getSheetsClient } = require('./lib/sheets');
 
 const app = express();
 app.use(bodyParser.json());
@@ -53,14 +40,15 @@ async function loadSkuCostingMaster(force = false) {
     return skuCostingCache;
   }
 
-  const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID;
-  if (!sheetsClient || !spreadsheetId) {
-    console.warn('⚠️ Sheets client or GOOGLE_SPREADSHEET_ID missing for Costing Engine.');
+  const spreadsheetId = process.env.GOOGLE_SHEET_ID || process.env.GOOGLE_SPREADSHEET_ID;
+  if (!spreadsheetId) {
+    console.warn('⚠️ GOOGLE_SHEET_ID missing for Costing Engine.');
     return skuCostingCache;
   }
 
   try {
-    const res = await sheetsClient.spreadsheets.values.get({
+    const sheets = await getSheetsClient();
+    const res = await sheets.spreadsheets.values.get({
       spreadsheetId,
       range: 'SKU_Master_Costing!A2:O65',
     });
@@ -118,7 +106,7 @@ async function loadSkuCostingMaster(force = false) {
 }
 
 // Initial fetch on server start
-loadSkuCostingMaster().catch(() => {});
+loadSkuCostingMaster().catch((e) => console.error('Costing init error:', e.message));
 
 // Helper function to calculate PnL for any given SKU
 function getSkuCosting(skuId) {
@@ -278,7 +266,7 @@ async function handlePdfDocument(chatId, document) {
     const ocrRecovered = pages.filter((p) => p.ocrApplied).length;
     if (ocrRecovered) await bot.sendMessage(chatId, `ℹ️ Recovered ${ocrRecovered} scanned page(s) via OCR fallback.`);
     if (stillNeedsOcr.length) {
-      await bot.sendMessage(chatId, `⚠️ ${stillNeedsOcr.length} page(s) had no extractable text even after OCR fallback — skipped.`);
+      await bot.sendMessage(chatId, `⚠️️ ${stillNeedsOcr.length} page(s) had no extractable text even after OCR fallback — skipped.`);
     }
 
     const usablePages = pages.filter((p) => !p.needsOcr);
