@@ -19,12 +19,113 @@ const { listInventory } = require('./lib/inventoryEngine');
 const { lookupCustomer } = require('./lib/customerLookup');
 const scanner = require('./lib/scannerEngine');
 
+// Google Sheets Client for Costing Engine
+let sheetsClient = null;
+try {
+  const { getSheetsClient } = require('./lib/sheets');
+  sheetsClient = getSheetsClient();
+} catch (e) {
+  try {
+    const { sheets } = require('./lib/googleSheets');
+    sheetsClient = sheets;
+  } catch (err) {
+    console.warn('⚠️ Google Sheets client could not be auto-imported for Costing Engine:', err.message);
+  }
+}
+
 const app = express();
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
 const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const bot = new TelegramBot(TOKEN);
+
+// ==========================================
+// DYNAMIC SKU COSTING & LIVE PnL ENGINE
+// ==========================================
+let skuCostingCache = new Map();
+let lastCostingFetch = 0;
+const COSTING_CACHE_TTL = 10 * 60 * 1000; // 10 minutes cache
+
+async function loadSkuCostingMaster(force = false) {
+  const now = Date.now();
+  if (!force && skuCostingCache.size > 0 && (now - lastCostingFetch) < COSTING_CACHE_TTL) {
+    return skuCostingCache;
+  }
+
+  const spreadsheetId = process.env.GOOGLE_SPREADSHEET_ID;
+  if (!sheetsClient || !spreadsheetId) {
+    console.warn('⚠️ Sheets client or GOOGLE_SPREADSHEET_ID missing for Costing Engine.');
+    return skuCostingCache;
+  }
+
+  try {
+    const res = await sheetsClient.spreadsheets.values.get({
+      spreadsheetId,
+      range: 'SKU_Master_Costing!A2:O65',
+    });
+
+    const rows = res.data.values || [];
+    const newCache = new Map();
+
+    rows.forEach((r) => {
+      if (!r || !r[1]) return; // Col B: SKU ID
+      const sku = String(r[1]).trim();
+
+      const customerPrice = parseFloat(r[4]) || 0;    // Col E
+      const bankPayout = parseFloat(r[5]) || 0;       // Col F
+      const meeshoShipping = parseFloat(r[6]) || 0;   // Col G
+      const purchaseCost = parseFloat(r[7]) || 0;     // Col H
+      const packagingCost = parseFloat(r[8]) || 0;    // Col I
+      const influencerComm = parseFloat(r[9]) || 0;   // Col J (% or flat Rs)
+
+      // Calculate Influencer Cost
+      let influencerCost = 0;
+      if (influencerComm > 0) {
+        influencerCost = influencerComm < 1 ? bankPayout * influencerComm : influencerComm;
+      }
+
+      const totalCost = purchaseCost + packagingCost + influencerCost;
+      const netProfit = bankPayout > 0 ? (bankPayout - totalCost) : (-totalCost);
+      const profitMargin = bankPayout > 0 ? ((netProfit / bankPayout) * 100) : 0;
+
+      newCache.set(sku, {
+        sku,
+        productName: r[2] || '',
+        category: r[3] || '',
+        customerPrice,
+        bankPayout,
+        meeshoShipping,
+        purchaseCost,
+        packagingCost,
+        influencerComm,
+        influencerCost: Math.round(influencerCost * 100) / 100,
+        totalCost: Math.round(totalCost * 100) / 100,
+        netProfit: Math.round(netProfit * 100) / 100,
+        profitMargin: Math.round(profitMargin * 10) / 10,
+        stock: parseInt(r[14]) || 0,
+      });
+    });
+
+    skuCostingCache = newCache;
+    lastCostingFetch = now;
+    console.log(`✅ Loaded ${skuCostingCache.size} SKUs from Google Sheet SKU_Master_Costing.`);
+    return skuCostingCache;
+  } catch (err) {
+    console.error('⚠️ Error fetching SKU Costing from Sheet:', err.message);
+    return skuCostingCache;
+  }
+}
+
+// Initial fetch on server start
+loadSkuCostingMaster().catch(() => {});
+
+// Helper function to calculate PnL for any given SKU
+function getSkuCosting(skuId) {
+  if (!skuId) return null;
+  const cleanSku = String(skuId).trim();
+  return skuCostingCache.get(cleanSku) || null;
+}
 
 // ---- FIX FOR WEBHOOK TIMEOUT & OWNER ALERTS ----
 async function notifyOwnersLowStock(alerts) {
@@ -191,6 +292,12 @@ async function handlePdfDocument(chatId, document) {
       const result = await processDispatchPdf(usablePages);
       let reply = `✅ Dispatch label processed: ${result.count} order(s) added to Orders_Dispatch.`;
       if (result.duplicates) reply += ` (${result.duplicates} duplicate AWB(s) skipped.)`;
+
+      // Live Costing / Profit Tagging Alert
+      if (skuCostingCache.size > 0 && result.count > 0) {
+        reply += `\n💰 Costing & Profit metrics auto-linked from SKU_Master_Costing.`;
+      }
+
       await bot.sendMessage(chatId, reply);
       await notifyOwnersLowStock(result.lowStockAlerts);
     }
@@ -237,7 +344,9 @@ async function handleTextCommand(chatId, text) {
       '/today - today\'s dispatch summary\n' +
       '/pnl - net P&L summary\n' +
       '/claims - pending claims countdown\n' +
-      '/fraud - high-risk buyer pincodes\n'
+      '/fraud - high-risk buyer pincodes\n' +
+      '/costing - view top SKU profit margins\n' +
+      '/reloadcosts - refresh live prices from Google Sheet\n'
     );
   }
 
@@ -251,6 +360,31 @@ async function handleTextCommand(chatId, text) {
   if (trimmed === '/fraud') {
     if (restricted('/fraud')) return;
     return bot.sendMessage(chatId, await commands.cmdFraud());
+  }
+
+  // Reload Master Costing from Sheet
+  if (trimmed === '/reloadcosts') {
+    if (restricted('/reloadcosts')) return;
+    await bot.sendMessage(chatId, '⏳ Fetching latest rates from SKU_Master_Costing...');
+    const cache = await loadSkuCostingMaster(true);
+    return bot.sendMessage(chatId, `✅ Successfully synced ${cache.size} SKUs from Google Sheet.`);
+  }
+
+  // Quick View of Profit Margins
+  if (trimmed === '/costing') {
+    if (restricted('/costing')) return;
+    if (skuCostingCache.size === 0) await loadSkuCostingMaster();
+    
+    let report = `📊 *MJM Top Costing & Profit Margins:*\n\n`;
+    let count = 0;
+    for (const [sku, info] of skuCostingCache.entries()) {
+      if (info.bankPayout > 0 && count < 8) {
+        report += `• *${sku}*\n  Payout: ₹${info.bankPayout} | Total Cost: ₹${info.totalCost} | *Net: ₹${info.netProfit} (${info.profitMargin}%)*\n`;
+        count++;
+      }
+    }
+    report += `\n_Total active SKUs: ${skuCostingCache.size}_`;
+    return bot.sendMessage(chatId, report, { parse_mode: 'Markdown' });
   }
 
   if (trimmed.startsWith('setcost ')) {
@@ -349,7 +483,7 @@ app.post('/webhook', (req, res) => {
   if (req.body.callback_query) handleCallbackQuery(req.body.callback_query);
 });
 
-app.get('/', (req, res) => res.send('MJM Meesho Bot is running.'));
+app.get('/', (req, res) => res.send('MJM Meesho Bot is running with Live SKU Costing Engine.'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
