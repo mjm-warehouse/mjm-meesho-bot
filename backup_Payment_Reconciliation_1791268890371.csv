@@ -1,0 +1,6090 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"8/19/26","321667988154891648_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/19/26","321677875345829184_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/19/26","321691805543710080_1","Settled","0","181","","0","Reconciled","No matching dispatch order found"
+"8/19/26","321694747847986304_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/19/26","321709110760101376_1","Settled","0","200","","0","Reconciled","No matching dispatch order found"
+"8/19/26","321711454264133697_1","Settled","0","146","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321749131357225920_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321838557211448832_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321856291743369280_1","Settled","0","101","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321857232664210752_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321857665256275328_1","Settled","0","181","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321873891927932288_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321874398901865600_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321909724244553024_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321911956125924736_1","Settled","0","160","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321936152642095168_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321938500475043209_1","Settled","0","101","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321955005891816768_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321972960771849600_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321973230490780608_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321974776943230336_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321987628068388224_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/20/26","321996686531964224_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/20/26","322005549817695360_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/20/26","322011703629218752_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/20/26","322012521942125696_1","Settled","0","141","","0","Reconciled","No matching dispatch order found"
+"8/20/26","322032385050183744_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/20/26","322036852001134081_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/20/26","322056556304042048_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/20/26","322060049303637120_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/20/26","322069482565942656_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322159564119510144_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322161083564852160_1","Settled","0","146","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322178388071266240_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322202222220523456_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322211745677913408_1","Settled","0","146","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322261271381260224_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322299514999704704_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322303360853552448_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322315524221906240_1","Settled","0","110","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322340467793889344_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322343444214614080_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322360145102669888_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322370570414361728_1","Settled","0","140","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322385449488988096_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322407774397642688_1","Settled","0","110","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322412402812796288_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322412713190602688_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322412931953624000_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322418667089725504_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322420720994255808_1","Settled","0","146","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322423496629435776_1","Settled","0","110","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322426372823092352_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322427422632215490_1","Settled","0","160","","0","Reconciled","No matching dispatch order found"
+"8/21/26","322430412541865280_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322449282626729920_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322458286242039872_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322481244301835648_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322525927568719232_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322527308321032256_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322529837087927616_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322544503742694336_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322553532896413760_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322554878064233601_1","Settled","0","146","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322556389246797888_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322567529150450816_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322571874206104960_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322576222406817728_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322586355590180160_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322586996588839872_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322595197270341568_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322595538422446016_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322596734742804416_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322611694496286784_1","Settled","0","141","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322633578667477056_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322652909602286912_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322654576271852480_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322665055530663296_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322702321770728576_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322721213868051584_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322738139012939136_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322738979002024896_1","Settled","0","146","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322741238591031360_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322747799598153088_1","Settled","0","141","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322748007462975424_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322755329359513664_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322763603559484544_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322785444390930496_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322785931903253888_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/22/26","322792801291712448_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/23/26","322847975331478912_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/23/26","322958613844274496_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/23/26","322974581999963264_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/23/26","323001137937233856_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/23/26","323071527762692160_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/23/26","323079104961611840_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/23/26","323104379841001408_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/23/26","323110371416848320_1","Settled","0","101","","0","Reconciled","No matching dispatch order found"
+"8/23/26","323112382213030848_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/23/26","323119051768051648_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/23/26","323140568594417728_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/23/26","323155477742914688_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/23/26","323156320877690240_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323285204654077888_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323302039940926592_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323318625259127744_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323329389797719424_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323329671982103936_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323331647474142336_1","Settled","0","146","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323335824035526592_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323337452961303680_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323340838019774400_1","Settled","0","160","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323364643925297216_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323405509381471616_1","Settled","0","127","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323409649356671040_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323429784268254528_1","Settled","0","160","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323463520586204224_1","Settled","0","160","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323469235918833152_1","Settled","0","101","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323473905062774144_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323485638512182784_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323497633835746816_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323509005209044288_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323515203744433536_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323522358719546688_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/24/26","323524172344362048_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323642402396964160_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323645281608523648_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323661263946548288_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323690299012416832_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323695603540297024_1","Settled","0","105","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323754253067748544_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323755782755583296_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323761101537927040_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323761138621744512_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323766745823184192_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323772645485053056_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323772697171461504_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323773038378091840_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323779720202159424_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323781327981764480_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323792343894754368_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323793333461714240_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323799086239057281_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323803981641942336_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323815704067310976_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323822699809244224_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323823040806782336_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323824372640285760_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323826209167246656_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323831984029818752_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323837003263116672_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323839924646184320_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323842238538843520_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323862550838108032_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/25/26","323885824806487424_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/26/26","323944224211895488_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/26/26","324014376275271552_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/26/26","324022176636329344_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/26/26","324052369823270336_1","Settled","0","160","","0","Reconciled","No matching dispatch order found"
+"8/26/26","324067190910649408_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/26/26","324148607298079872_1","Settled","0","101","","0","Reconciled","No matching dispatch order found"
+"8/26/26","324153788358477952_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/26/26","324190619682752640_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/26/26","324214165481753728_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/26/26","324229782424378944_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/27/26","324260946408392832_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/27/26","324418393808974720_1","Settled","0","81","","0","Reconciled","No matching dispatch order found"
+"8/27/26","324422738550099776_1","Settled","0","170","","0","Reconciled","Diff of Rs.-29.74 vs invoice"
+"8/27/26","324428693012045632_1","Settled","0","170","","0","Reconciled","Diff of Rs.-29.9 vs invoice"
+"8/27/26","324430878395424576_1","Settled","0","81","","0","Reconciled","Diff of Rs.-9.65 vs invoice"
+"8/27/26","324442822638367488_1","Settled","0","101","","0","Reconciled","Diff of Rs.-21.78 vs invoice"
+"8/27/26","324442963931419456_1","Settled","0","148","","0","Reconciled","Diff of Rs.-20.52 vs invoice"
+"8/27/26","324450235400490816_1","Settled","0","120","","0","Reconciled","Diff of Rs.-25.29 vs invoice"
+"8/27/26","324465315969299200_1","Settled","0","129","","0","Reconciled","Diff of Rs.-23.49 vs invoice"
+"8/27/26","324505506857967424_1","Settled","0","120","","0","Reconciled","Diff of Rs.-16.09 vs invoice"
+"8/27/26","324534968473154304_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/27/26","324545813982802688_1","Settled","0","141","","0","Reconciled","Diff of Rs.-23.95 vs invoice"
+"8/27/26","324566853475226432_1","Settled","0","160","","0","Reconciled","No matching dispatch order found"
+"8/27/26","324567139045773120_1","Settled","0","148","","0","Reconciled","Diff of Rs.-28.22 vs invoice"
+"8/27/26","324569552262389312_1","Settled","0","170","","0","Reconciled","Diff of Rs.-26.47 vs invoice"
+"8/28/26","324775881040057856_1","Settled","0","148","","0","Reconciled","Diff of Rs.-20.45 vs invoice"
+"8/28/26","324782168041706112_1","Settled","0","160","","0","Reconciled","Diff of Rs.-27.79 vs invoice"
+"8/28/26","324815019332197952_1","Settled","0","148","","0","Reconciled","Diff of Rs.-27.76 vs invoice"
+"8/28/26","324821745292925056_1","Settled","0","148","","0","Reconciled","Diff of Rs.-20.87 vs invoice"
+"8/28/26","324852530817392192_1","Settled","0","170","","0","Reconciled","Diff of Rs.-33.03 vs invoice"
+"8/28/26","324855031272693376_1","Settled","0","170","","0","Reconciled","Diff of Rs.-23.25 vs invoice"
+"8/28/26","324856323453869568_1","Settled","0","170","","0","Reconciled","Diff of Rs.-30.06 vs invoice"
+"8/28/26","324856763205590851_1","Settled","0","141","","0","Reconciled","Diff of Rs.-19.17 vs invoice"
+"8/28/26","324891576469937920_1","Settled","0","148","","0","Reconciled","Diff of Rs.-20.52 vs invoice"
+"8/28/26","324903035337826048_1","Settled","0","148","","0","Reconciled","Diff of Rs.-29.98 vs invoice"
+"8/28/26","324905943634583360_1","Settled","0","110","","0","Reconciled","Diff of Rs.-21.82 vs invoice"
+"8/28/26","324917832610260160_1","Settled","0","148","","0","Reconciled","Diff of Rs.-29.29 vs invoice"
+"8/28/26","324926027337948928_1","Settled","0","120","","0","Reconciled","Diff of Rs.-15.63 vs invoice"
+"8/28/26","324936859694259968_1","Settled","0","101","","0","Reconciled","Diff of Rs.-25.17 vs invoice"
+"8/29/26","325113774929469184_1","Settled","0","170","","0","Reconciled","Diff of Rs.-23.57 vs invoice"
+"8/29/26","325127542753320640_1","Settled","0","141","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325136909221355200_1","Settled","0","101","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325159853326720640_1","Settled","0","160","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325176806548299456_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325178880529572608_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325190251930836736_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325199624853905088_1","Settled","0","120","","0","Reconciled","Diff of Rs.-24.94 vs invoice"
+"8/29/26","325237307729552576_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325237479146562304_1","Settled","0","141","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325259015366681792_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325308868898971328_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325324845942431424_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/29/26","325339717941976832_1","Settled","0","141","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325349867436236544_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325356890064281344_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325362841181871744_1","Settled","0","141","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325473862357737088_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325520028067815104_1","Settled","0","129","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325526989892259712_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325530070083034752_1","Settled","0","120","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325533645706223104_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325545135712624384_1","Settled","0","148","","0","Reconciled","Diff of Rs.-27.92 vs invoice"
+"8/30/26","325545161429254784_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325549802442055168_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325552805074210688_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325574847060411008_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325606922621411072_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325606922621411072_2","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325615322038132352_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325615837090275072_1","Settled","0","300","","0","Reconciled","Diff of Rs.-58.11 vs invoice"
+"8/30/26","325617029656731392_1","Settled","0","271","","0","Reconciled","Diff of Rs.-47.66 vs invoice"
+"8/30/26","325618513848950272_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325623382005636864_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325635825269637760_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325635992008646272_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325642500755984256_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325642717180845568_1","Settled","0","271","","0","Reconciled","Diff of Rs.-44.69 vs invoice"
+"8/30/26","325644970746830464_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325644970746830464_2","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325645280949165824_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325646250287727232_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325647058328653696_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325650663822450368_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325654885599141568_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325655084396568192_1","Settled","0","300","","0","Reconciled","Diff of Rs.-48.66 vs invoice"
+"8/30/26","325659805391904448_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325663951599820416_1","Settled","0","300","","0","Reconciled","Diff of Rs.-57.81 vs invoice"
+"8/30/26","325669128722747264_1","Settled","0","300","","0","Reconciled","Diff of Rs.-52.08 vs invoice"
+"8/30/26","325671706034474880_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325674506758774400_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325677000855510720_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325677000855510720_2","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325679760405552640_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325683756395696000_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325689499357142784_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325693598070112896_1","Settled","0","160","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325696445641818752_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/30/26","325698644261068416_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325719444577967872_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325719696900260480_1","Settled","0","330","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325723462423404160_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325771120122912448_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325804400943685376_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325829005162962432_1","Settled","0","100","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325846870700187328_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325848493921001152_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325848729445106304_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325852722500853376_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325874340019166720_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325881746551856896_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325888484969668288_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325890935783501696_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325891368362082944_1","Settled","0","271","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325896030119911040_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325897828251590147_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325929139712417536_1","Settled","0","300","","0","Reconciled","Diff of Rs.-43.01 vs invoice"
+"8/31/26","325949465204740992_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325957195759997824_1","Settled","0","170","","0","Reconciled","Diff of Rs.-23.73 vs invoice"
+"8/31/26","325963624298435520_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325966896123991040_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325968717450171328_1","Settled","0","271","","0","Reconciled","Diff of Rs.-38.59 vs invoice"
+"8/31/26","325970689960039296_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325991001867015232_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325991001867015232_2","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325991692444415232_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","325995467366323200_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326000443746465024_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326003314368042048_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326005589211730880_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326016193731278080_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326019100807574784_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326019640138519616_1","Settled","0","148","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326020163567588416_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326030006416282688_1","Settled","0","300","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326034530991461440_1","Settled","0","170","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326038117760939264_1","Settled","0","130","","0","Reconciled","No matching dispatch order found"
+"8/31/26","326051985432368193_1","Settled","0","170","","0","Reconciled","Diff of Rs.-29.44 vs invoice"
+"","","","","","","46203","303326815207175616_1","Returned","194","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303346298768596480_1","Returned","303","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303353236549940608_1","Returned","299","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303404926655405248_1","Returned","299","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303418677008167232_1","Returned","304","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303440177015363776_1","Returned","161","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303448960944206144_1","Returned","301","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303476192409098432_1","Returned","161","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303556580187205952_1","Returned","301","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303566756483068224_1","Returned","306","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303569148485973376_1","Returned","302","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303590086036305280_1","Returned","300","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303595882515077312_1","Returned","301","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46203","303261756175037824_1","Delivered","303","0","","198.46","Settled","Order Summary Backfill"
+"","","","","","","46203","303335555911194816_1","Delivered","142","0","","52.72","Settled","Order Summary Backfill"
+"","","","","","","46203","303351562294926528_1","Delivered","307","0","","180.64","Settled","Order Summary Backfill"
+"","","","","","","46203","303354701909734784_1","Delivered","304","0","","181.04","Settled","Order Summary Backfill"
+"","","","","","","46203","303358309313442112_1","Delivered","162","0","","71.62","Settled","Order Summary Backfill"
+"","","","","","","46203","303375750831420864_1","Delivered","164","0","","89.54","Settled","Order Summary Backfill"
+"","","","","","","46203","303386849406491840_1","Delivered","353","0","","251.5","Settled","Order Summary Backfill"
+"","","","","","","46203","303400033411471552_1","Delivered","142","0","","52.72","Settled","Order Summary Backfill"
+"","","","","","","46203","303410327826472448_1","Delivered","301","0","","198.73","Settled","Order Summary Backfill"
+"","","","","","","46203","303428086753728704_1","Delivered","278","0","","176.63","Settled","Order Summary Backfill"
+"","","","","","","46203","303433972359509376_1","Delivered","300","0","","180.81","Settled","Order Summary Backfill"
+"","","","","","","46203","303437504462876992_1","Delivered","300","0","","198.74","Settled","Order Summary Backfill"
+"","","","","","","46203","303438713244360192_1","Delivered","160","0","","71.48","Settled","Order Summary Backfill"
+"","","","","","","46203","303439129881353728_1","Delivered","278","0","","176.58","Settled","Order Summary Backfill"
+"","","","","","","46203","303486462165938497_1","Delivered","278","0","","176.6","Settled","Order Summary Backfill"
+"","","","","","","46203","303487154923051200_1","Delivered","161","0","","89.18","Settled","Order Summary Backfill"
+"","","","","","","46203","303490352479090112_1","Delivered","352","0","","269.21","Settled","Order Summary Backfill"
+"","","","","","","46203","303521997416570368_1","Delivered","141","0","","52.54","Settled","Order Summary Backfill"
+"","","","","","","46203","303525079871265984_1","Delivered","301","0","","198.52","Settled","Order Summary Backfill"
+"","","","","","","46203","303530189103963328_1","Delivered","141","0","","52.54","Settled","Order Summary Backfill"
+"","","","","","","46203","303534011115532608_1","Delivered","142","0","","52.72","Settled","Order Summary Backfill"
+"","","","","","","46203","303543989185091776_1","Delivered","300","0","","181.05","Settled","Order Summary Backfill"
+"","","","","","","46203","303551271393441216_1","Delivered","300","0","","181.08","Settled","Order Summary Backfill"
+"","","","","","","46203","303551617176057217_1","Delivered","162","0","","89.36","Settled","Order Summary Backfill"
+"","","","","","","46203","303551728346084800_1","Delivered","300","0","","198.74","Settled","Order Summary Backfill"
+"","","","","","","46203","303554102515086720_1","Delivered","160","0","","89.38","Settled","Order Summary Backfill"
+"","","","","","","46203","303564921084997952_1","Delivered","301","0","","180.82","Settled","Order Summary Backfill"
+"","","","","","","46203","303580243661567424_1","Delivered","278","0","","176.6","Settled","Order Summary Backfill"
+"","","","","","","46203","303582846545966528_1","Delivered","162","0","","71.47","Settled","Order Summary Backfill"
+"","","","","","","46202","302889848128550272_1","Returned","252","0","","-16.92","Settled","Order Summary Backfill"
+"","","","","","","46202","302895092787910848_1","Returned","304","0","","17.87","Settled","Order Summary Backfill"
+"","","","","","","46202","302902765066809664_1","Returned","300","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46202","303021074354084032_1","Returned","300","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46202","303055492954338752_1","Returned","300","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46202","303139969877554624_1","Returned","300","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46202","303145553788024256_1","Returned","142","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46202","303173373297833344_1","Returned","306","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46202","303175921744638272_1","Returned","300","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46202","303028259271357888_1","Delivered","270","0","","151.21","Settled","Order Summary Backfill"
+"","","","","","","46202","303036763306881344_1","Delivered","142","0","","52.72","Settled","Order Summary Backfill"
+"","","","","","","46202","303040779919890624_1","Delivered","162","0","","89.24","Settled","Order Summary Backfill"
+"","","","","","","46202","303050569613319680_1","Delivered","278","0","","159.09","Settled","Order Summary Backfill"
+"","","","","","","46202","303057068592864448_1","Delivered","253","0","","146.94","Settled","Order Summary Backfill"
+"","","","","","","46202","303065721179878784_1","Delivered","160","0","","71.63","Settled","Order Summary Backfill"
+"","","","","","","46202","303066566437968064_1","Delivered","279","0","","158.9","Settled","Order Summary Backfill"
+"","","","","","","46202","303066632019254784_1","Delivered","277","0","","159.17","Settled","Order Summary Backfill"
+"","","","","","","46202","303069430656015872_1","Delivered","151","0","","52.51","Settled","Order Summary Backfill"
+"","","","","","","46202","303092464919911616_1","Delivered","142","0","","52.72","Settled","Order Summary Backfill"
+"","","","","","","46202","303101071482953216_1","Delivered","300","0","","180.8","Settled","Order Summary Backfill"
+"","","","","","","46202","303102363718655488_1","Delivered","300","0","","198.74","Settled","Order Summary Backfill"
+"","","","","","","46202","303107244437157312_1","Delivered","300","0","","198.48","Settled","Order Summary Backfill"
+"","","","","","","46202","303107721241441664_1","Delivered","142","0","","52.53","Settled","Order Summary Backfill"
+"","","","","","","46202","303112010953274816_1","Delivered","303","0","","181.04","Settled","Order Summary Backfill"
+"","","","","","","46202","303113790923617728_1","Delivered","143","0","","52.74","Settled","Order Summary Backfill"
+"","","","","","","46202","303118797291286848_1","Delivered","145","0","","52.56","Settled","Order Summary Backfill"
+"","","","","","","46202","303122545442698624_1","Delivered","307","0","","198.44","Settled","Order Summary Backfill"
+"","","","","","","46202","303124019006676480_1","Delivered","300","0","","181.05","Settled","Order Summary Backfill"
+"","","","","","","46202","303133423207520448_1","Delivered","300","0","","180.8","Settled","Order Summary Backfill"
+"","","","","","","46202","303136657150122176_1","Delivered","300","0","","198.74","Settled","Order Summary Backfill"
+"","","","","","","46202","303153416258461184_1","Delivered","161","0","","89.18","Settled","Order Summary Backfill"
+"","","","","","","46202","303161490398393792_1","Delivered","301","0","","198.7","Settled","Order Summary Backfill"
+"","","","","","","46202","303167342446801218_1","Delivered","304","0","","180.78","Settled","Order Summary Backfill"
+"","","","","","","46202","303171837830247872_1","Delivered","210","0","","127.15","Settled","Order Summary Backfill"
+"","","","","","","46202","303183254675404160_1","Delivered","300","0","","181.05","Settled","Order Summary Backfill"
+"","","","","","","46202","303196141932387520_1","Delivered","277","0","","176.84","Settled","Order Summary Backfill"
+"","","","","","","46202","303217191657566528_1","Delivered","142","0","","70.46","Settled","Order Summary Backfill"
+"","","","","","","46202","303223116000533696_1","Delivered","281","0","","159.15","Settled","Order Summary Backfill"
+"","","","","","","46202","303231514194899264_1","Delivered","304","0","","180.81","Settled","Order Summary Backfill"
+"","","","","","","46201","302521674308940096_1","Returned","165","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46201","302523800560743808_1","Returned","274","0","","-74","Settled","Order Summary Backfill"
+"","","","","","","46201","302682181799916928_1","Returned","165","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46201","302700997284360512_1","Returned","275","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46201","302720472351913344_1","Returned","141","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46201","302765964335134080_1","Returned","275","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46201","302782343620736384_1","Returned","274","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46201","302804987779815616_1","Returned","381","0","","105.46","Settled","Order Summary Backfill"
+"","","","","","","46201","302839652788017344_1","Returned","273","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46201","302856048161994176_1","Returned","190","0","","-125.59","Settled","Order Summary Backfill"
+"","","","","","","46201","302872167350416832_1","Returned","276","0","","18.1","Settled","Order Summary Backfill"
+"","","","","","","46201","302515646569651712_1","Delivered","278","0","","198.78","Settled","Order Summary Backfill"
+"","","","","","","46201","302527538377793024_1","Delivered","273","0","","180.88","Settled","Order Summary Backfill"
+"","","","","","","46201","302614906804705472_1","Delivered","253","0","","159","Settled","Order Summary Backfill"
+"","","","","","","46201","302620521957569920_1","Delivered","142","0","","52.53","Settled","Order Summary Backfill"
+"","","","","","","46201","302627426637869376_1","Delivered","252","0","","176.91","Settled","Order Summary Backfill"
+"","","","","","","46201","302672449668265344_1","Delivered","254","0","","159.17","Settled","Order Summary Backfill"
+"","","","","","","46201","302699864715041984_1","Delivered","256","0","","159.16","Settled","Order Summary Backfill"
+"","","","","","","46201","302703883497911744_1","Delivered","278","0","","181.05","Settled","Order Summary Backfill"
+"","","","","","","46201","302713269721118080_1","Delivered","190","0","","89.24","Settled","Order Summary Backfill"
+"","","","","","","46201","302715410674359808_1","Delivered","258","0","","176.69","Settled","Order Summary Backfill"
+"","","","","","","46201","302720392089989440_1","Delivered","211","0","","145.11","Settled","Order Summary Backfill"
+"","","","","","","46201","302756739408082304_1","Delivered","276","0","","198.79","Settled","Order Summary Backfill"
+"","","","","","","46201","302757674523964800_1","Delivered","283","0","","198.56","Settled","Order Summary Backfill"
+"","","","","","","46201","302766432130053568_1","Delivered","250","0","","151.2","Settled","Order Summary Backfill"
+"","","","","","","46201","302769679445072064_1","Delivered","253","0","","159.17","Settled","Order Summary Backfill"
+"","","","","","","46201","302778711991131648_1","Delivered","146","0","","70.64","Settled","Order Summary Backfill"
+"","","","","","","46201","302830317797258688_1","Delivered","251","0","","177.1","Settled","Order Summary Backfill"
+"","","","","","","46201","302847797206857088_1","Delivered","275","0","","198.6","Settled","Order Summary Backfill"
+"","","","","","","46201","302851710224053632_1","Delivered","142","0","","52.71","Settled","Order Summary Backfill"
+"","","","","","","46201","302853428554905024_1","Delivered","273","0","","198.79","Settled","Order Summary Backfill"
+"","","","","","","46201","302857022901591552_1","Delivered","275","0","","198.6","Settled","Order Summary Backfill"
+"","","","","","","46200","302263018390428864_1","Returned","255","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46200","302342812224337344_1","Returned","161","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46200","302376858109222080_1","Returned","274","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46200","302393454477603136_1","Returned","251","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46200","302450575407586816_1","Returned","253","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46200","302452722870263296_1","Returned","274","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46200","302489445709017408_1","Returned","280","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46200","302152861088226816_1","Delivered","190","0","","111.27","Settled","Order Summary Backfill"
+"","","","","","","46200","302259463845721472_1","Delivered","274","0","","180.88","Settled","Order Summary Backfill"
+"","","","","","","46200","302259589679035776_1","Delivered","274","0","","180.88","Settled","Order Summary Backfill"
+"","","","","","","46200","302261473668117888_1","Delivered","142","0","","52.57","Settled","Order Summary Backfill"
+"","","","","","","46200","302265235384186304_1","Delivered","257","0","","159.15","Settled","Order Summary Backfill"
+"","","","","","","46200","302267019050686656_1","Delivered","254","0","","177.1","Settled","Order Summary Backfill"
+"","","","","","","46200","302270105046627776_1","Delivered","275","0","","180.91","Settled","Order Summary Backfill"
+"","","","","","","46200","302286051954013568_1","Delivered","382","0","","280.39","Settled","Order Summary Backfill"
+"","","","","","","46200","302291574958994816_1","Delivered","276","0","","198.63","Settled","Order Summary Backfill"
+"","","","","","","46200","302296447784917184_1","Delivered","252","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46200","302305603522031936_1","Delivered","244","0","","151.22","Settled","Order Summary Backfill"
+"","","","","","","46200","302310126877291968_1","Delivered","353","0","","251.54","Settled","Order Summary Backfill"
+"","","","","","","46200","302332236081405440_1","Delivered","170","0","","52.69","Settled","Order Summary Backfill"
+"","","","","","","46200","302350091821586624_1","Delivered","161","0","","71.63","Settled","Order Summary Backfill"
+"","","","","","","46200","302353088923448769_1","Delivered","212","0","","127.33","Settled","Order Summary Backfill"
+"","","","","","","46200","302359233977392640_1","Delivered","142","0","","52.56","Settled","Order Summary Backfill"
+"","","","","","","46200","302363403107054976_1","Delivered","274","0","","198.8","Settled","Order Summary Backfill"
+"","","","","","","46200","302390791668905408_1","Delivered","253","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46200","302393190026458496_1","Delivered","271","0","","168.62","Settled","Order Summary Backfill"
+"","","","","","","46200","302397726518681088_1","Delivered","275","0","","180.87","Settled","Order Summary Backfill"
+"","","","","","","46200","302400171702294720_1","Delivered","252","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46200","302409557111806144_1","Delivered","281","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46200","302431786112807232_1","Delivered","252","0","","159.11","Settled","Order Summary Backfill"
+"","","","","","","46200","302432969044947264_1","Delivered","274","0","","198.8","Settled","Order Summary Backfill"
+"","","","","","","46200","302441128052274560_1","Delivered","142","0","","70.28","Settled","Order Summary Backfill"
+"","","","","","","46200","302443873176001728_1","Delivered","142","0","","52.53","Settled","Order Summary Backfill"
+"","","","","","","46200","302462214165829824_1","Delivered","382","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46200","302462594273654144_1","Delivered","279","0","","181.04","Settled","Order Summary Backfill"
+"","","","","","","46200","302467214878324096_1","Delivered","356","0","","251.67","Settled","Order Summary Backfill"
+"","","","","","","46200","302477318935966016_1","Delivered","274","0","","198.8","Settled","Order Summary Backfill"
+"","","","","","","46200","302489370584561024_1","Delivered","276","0","","198.79","Settled","Order Summary Backfill"
+"","","","","","","46200","302494395088248320_1","Delivered","273","0","","198.61","Settled","Order Summary Backfill"
+"","","","","","","46200","302500865067260096_1","Delivered","277","0","","198.98","Settled","Order Summary Backfill"
+"","","","","","","46200","302508467267450304_1","Delivered","193","0","","108.42","Settled","Order Summary Backfill"
+"","","","","","","46199","301804414883754304_1","Returned","275","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46199","301932511838761280_1","Returned","278","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46199","301953815815796160_1","Returned","275","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46199","301965793166892544_1","Returned","274","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46199","301966945061182976_1","Returned","276","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46199","302001433854941376_1","Returned","274","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46199","302026060953448768_1","Returned","275","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46199","302028988367773184_1","Returned","164","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46199","302056252468697280_1","Returned","275","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46199","301791423819560320_1","Delivered","274","0","","180.88","Settled","Order Summary Backfill"
+"","","","","","","46199","301825403675620736_1","Delivered","274","0","","198.8","Settled","Order Summary Backfill"
+"","","","","","","46199","301878459390826688_1","Delivered","275","0","","181.08","Settled","Order Summary Backfill"
+"","","","","","","46199","301885005982144705_1","Delivered","141","0","","52.74","Settled","Order Summary Backfill"
+"","","","","","","46199","301889982919220416_1","Delivered","251","0","","176.73","Settled","Order Summary Backfill"
+"","","","","","","46199","301913964719446208_1","Delivered","255","0","","158.98","Settled","Order Summary Backfill"
+"","","","","","","46199","301915213941710336_1","Delivered","196","0","","108.22","Settled","Order Summary Backfill"
+"","","","","","","46199","301925296692010496_1","Delivered","274","0","","181","Settled","Order Summary Backfill"
+"","","","","","","46199","301942876722836864_1","Delivered","252","0","","159.03","Settled","Order Summary Backfill"
+"","","","","","","46199","301950314919303360_1","Delivered","273","0","","181.08","Settled","Order Summary Backfill"
+"","","","","","","46199","301955364631747776_1","Delivered","274","0","","198.85","Settled","Order Summary Backfill"
+"","","","","","","46199","301967187133209792_1","Delivered","246","0","","151.22","Settled","Order Summary Backfill"
+"","","","","","","46199","301990485418187968_1","Delivered","222","0","","147.06","Settled","Order Summary Backfill"
+"","","","","","","46199","301990562285106624_1","Delivered","168","0","","71.59","Settled","Order Summary Backfill"
+"","","","","","","46199","301997911894793408_1","Delivered","192","0","","126.03","Settled","Order Summary Backfill"
+"","","","","","","46199","301997911894793408_2","Delivered","192","0","","126.03","Settled","Order Summary Backfill"
+"","","","","","","46199","302006688387833024_1","Delivered","190","0","","111.24","Settled","Order Summary Backfill"
+"","","","","","","46199","302006958080465088_1","Delivered","252","0","","176.91","Settled","Order Summary Backfill"
+"","","","","","","46199","302009508348435648_1","Delivered","256","0","","176.88","Settled","Order Summary Backfill"
+"","","","","","","46199","302024417230724608_1","Delivered","261","0","","159.14","Settled","Order Summary Backfill"
+"","","","","","","46199","302049342910001472_1","Delivered","211","0","","145.11","Settled","Order Summary Backfill"
+"","","","","","","46199","302054708722670784_1","Delivered","275","0","","181.06","Settled","Order Summary Backfill"
+"","","","","","","46199","302057083374017728_1","Delivered","160","0","","89.52","Settled","Order Summary Backfill"
+"","","","","","","46199","302072698887353728_1","Delivered","252","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46199","302073956635385024_1","Delivered","280","0","","176.57","Settled","Order Summary Backfill"
+"","","","","","","46199","302074417181432000_1","Delivered","256","0","","159.15","Settled","Order Summary Backfill"
+"","","","","","","46199","302074730852456640_1","Delivered","383","0","","280.38","Settled","Order Summary Backfill"
+"","","","","","","46199","302122274193290624_1","Delivered","274","0","","181.08","Settled","Order Summary Backfill"
+"","","","","","","46199","302130702672344448_1","Delivered","281","0","","198.78","Settled","Order Summary Backfill"
+"","","","","","","46199","302139770443144704_1","Delivered","257","0","","158.98","Settled","Order Summary Backfill"
+"","","","","","","46199","302146084260945088_1","Delivered","255","0","","177.1","Settled","Order Summary Backfill"
+"","","","","","","46199","301981417084360896_1","Cancelled","221","0","","147.24","Settled","Order Summary Backfill"
+"","","","","","","46198","301708541596866752_1","Returned","274","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46198","301442850754016640_1","Delivered","222","0","","147.06","Settled","Order Summary Backfill"
+"","","","","","","46198","301453828561377472_1","Delivered","212","0","","127.32","Settled","Order Summary Backfill"
+"","","","","","","46198","301523807435911488_1","Delivered","252","0","","176.91","Settled","Order Summary Backfill"
+"","","","","","","46198","301542758988191936_1","Delivered","255","0","","158.98","Settled","Order Summary Backfill"
+"","","","","","","46198","301555437810643264_1","Delivered","275","0","","180.91","Settled","Order Summary Backfill"
+"","","","","","","46198","301558383914938688_1","Delivered","274","0","","181.08","Settled","Order Summary Backfill"
+"","","","","","","46198","301589132365673856_1","Delivered","274","0","","198.8","Settled","Order Summary Backfill"
+"","","","","","","46198","301593636179948928_1","Delivered","253","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46198","301596286279628160_1","Delivered","142","0","","52.53","Settled","Order Summary Backfill"
+"","","","","","","46198","301606040477790528_1","Delivered","166","0","","89.38","Settled","Order Summary Backfill"
+"","","","","","","46198","301606819309434240_1","Delivered","252","0","","176.91","Settled","Order Summary Backfill"
+"","","","","","","46198","301610775867978048_1","Delivered","166","0","","89.16","Settled","Order Summary Backfill"
+"","","","","","","46198","301616106899387776_1","Delivered","258","0","","158.98","Settled","Order Summary Backfill"
+"","","","","","","46198","301646806186859712_1","Delivered","275","0","","198.79","Settled","Order Summary Backfill"
+"","","","","","","46198","301663099932012864_1","Delivered","251","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46198","301672079114640896_1","Delivered","278","0","","181.05","Settled","Order Summary Backfill"
+"","","","","","","46198","301678720287666496_1","Delivered","274","0","","181.08","Settled","Order Summary Backfill"
+"","","","","","","46198","301693810449462720_1","Delivered","281","0","","198.57","Settled","Order Summary Backfill"
+"","","","","","","46198","301724532782544320_1","Delivered","190","0","","111.42","Settled","Order Summary Backfill"
+"","","","","","","46198","301733510855924928_1","Delivered","142","0","","70.64","Settled","Order Summary Backfill"
+"","","","","","","46198","301757394186475712_1","Delivered","161","0","","71.63","Settled","Order Summary Backfill"
+"","","","","","","46198","301764533609109696_1","Delivered","277","0","","180.9","Settled","Order Summary Backfill"
+"","","","","","","46198","301769534044779968_1","Delivered","253","0","","176.91","Settled","Order Summary Backfill"
+"","","","","","","46198","301780350845393088_1","Delivered","280","0","","180.61","Settled","Order Summary Backfill"
+"","","","","","","46197","301305932395453632_1","Returned","252","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46197","301313550038081024_1","Returned","244","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46197","301173877563078080_1","Delivered","217","0","","108.41","Settled","Order Summary Backfill"
+"","","","","","","46197","301206478961253888_1","Delivered","214","0","","127.32","Settled","Order Summary Backfill"
+"","","","","","","46197","301208995442865536_1","Delivered","222","0","","146.87","Settled","Order Summary Backfill"
+"","","","","","","46197","301232404189311296_1","Delivered","276","0","","181.06","Settled","Order Summary Backfill"
+"","","","","","","46197","301254613754328448_1","Delivered","251","0","","159.03","Settled","Order Summary Backfill"
+"","","","","","","46197","301262144379973952_1","Delivered","256","0","","159","Settled","Order Summary Backfill"
+"","","","","","","46197","301265230988981632_1","Delivered","278","0","","181.05","Settled","Order Summary Backfill"
+"","","","","","","46197","301277954674406848_1","Delivered","290","0","","180.8","Settled","Order Summary Backfill"
+"","","","","","","46197","301342447500670400_1","Delivered","172","0","","92.53","Settled","Order Summary Backfill"
+"","","","","","","46197","301388336910972288_1","Delivered","142","0","","52.72","Settled","Order Summary Backfill"
+"","","","","","","46197","301392302340469056_1","Delivered","251","0","","159.02","Settled","Order Summary Backfill"
+"","","","","","","46197","301394243669881153_1","Delivered","292","0","","180.79","Settled","Order Summary Backfill"
+"","","","","","","46197","301394703226910144_1","Delivered","244","0","","151.23","Settled","Order Summary Backfill"
+"","","","","","","46197","301416973070638272_1","Delivered","275","0","","198.85","Settled","Order Summary Backfill"
+"","","","","","","46197","301420442366254592_1","Delivered","275","0","","180.91","Settled","Order Summary Backfill"
+"","","","","","","46196","300835228212534784_1","Delivered","290","0","","198.79","Settled","Order Summary Backfill"
+"","","","","","","46196","300841358183636480_1","Delivered","290","0","","180.82","Settled","Order Summary Backfill"
+"","","","","","","46196","300846354816048640_1","Delivered","273","0","","162.14","Settled","Order Summary Backfill"
+"","","","","","","46196","300860048874675712_1","Delivered","194","0","","126.21","Settled","Order Summary Backfill"
+"","","","","","","46196","300876361241008320_1","Delivered","290","0","","180.79","Settled","Order Summary Backfill"
+"","","","","","","46196","300887159735727552_1","Delivered","271","0","","179.62","Settled","Order Summary Backfill"
+"","","","","","","46196","300903548467878080_1","Delivered","244","0","","168.96","Settled","Order Summary Backfill"
+"","","","","","","46196","301003682617898432_1","Delivered","289","0","","180.8","Settled","Order Summary Backfill"
+"","","","","","","46196","301011876698550592_1","Delivered","223","0","","147.24","Settled","Order Summary Backfill"
+"","","","","","","46196","301016489908385216_1","Delivered","192","0","","108.24","Settled","Order Summary Backfill"
+"","","","","","","46195","300540300789953984_1","Returned","244","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46195","300541266432956608_1","Returned","289","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46195","300453560809320768_1","Delivered","244","0","","151.03","Settled","Order Summary Backfill"
+"","","","","","","46195","300540413578982848_1","Delivered","196","0","","108.41","Settled","Order Summary Backfill"
+"","","","","","","46195","300546588077791424_1","Delivered","227","0","","159.03","Settled","Order Summary Backfill"
+"","","","","","","46195","300605299496392896_1","Delivered","222","0","","147.06","Settled","Order Summary Backfill"
+"","","","","","","46194","300104205392557504_1","Delivered","192","0","","108.27","Settled","Order Summary Backfill"
+"","","","","","","46194","300115093482780032_1","Delivered","322","0","","198.37","Settled","Order Summary Backfill"
+"","","","","","","46194","300184556815413568_1","Delivered","196","0","","108.22","Settled","Order Summary Backfill"
+"","","","","","","46194","300213800626697600_1","Delivered","171","0","","92.46","Settled","Order Summary Backfill"
+"","","","","","","46194","300232452790951104_1","Delivered","225","0","","129.34","Settled","Order Summary Backfill"
+"","","","","","","46194","300248137330225472_1","Delivered","290","0","","198.52","Settled","Order Summary Backfill"
+"","","","","","","46194","300260862190055744_1","Delivered","290","0","","180.79","Settled","Order Summary Backfill"
+"","","","","","","46194","300270005822830016_1","Delivered","355","0","","251.68","Settled","Order Summary Backfill"
+"","","","","","","46194","300275915504891328_1","Delivered","291","0","","198.79","Settled","Order Summary Backfill"
+"","","","","","","46194","300288639217573056_1","Delivered","290","0","","198.79","Settled","Order Summary Backfill"
+"","","","","","","46194","300290331478734208_1","Delivered","290","0","","198.52","Settled","Order Summary Backfill"
+"","","","","","","46194","300290639537780097_1","Delivered","292","0","","180.78","Settled","Order Summary Backfill"
+"","","","","","","46194","300296761309993153_1","Delivered","173","0","","92.52","Settled","Order Summary Backfill"
+"","","","","","","46194","300298839127366848_1","Delivered","290","0","","180.82","Settled","Order Summary Backfill"
+"","","","","","","46193","299939536048758272_1","Exchanged","271","0","","4.88","Settled","Order Summary Backfill"
+"","","","","","","46193","299918211928169664_1","Delivered","290","0","","198.79","Settled","Order Summary Backfill"
+"","","","","","","46192","299253806633654464_1","Delivered","212","0","","145.03","Settled","Order Summary Backfill"
+"","","","","","","46188","297940926985829056_1","Returned","191","0","","-162","Settled","Order Summary Backfill"
+"","","","","","","46184","296357073104382400_1","Returned","528","0","","-216","Settled","Order Summary Backfill"
+"","","","","","","46184","296631034899835328_1","Returned","466","0","","-340","Settled","Order Summary Backfill"
+"","","","","","","46184","296614572457466048_1","Delivered","528","0","","397.31","Settled","Order Summary Backfill"
+"","","","","","","46184","296704839248255168_1","Delivered","466","0","","337.27","Settled","Order Summary Backfill"
+"","","","","","","46183","295989655433303936_1","Returned","529","0","","-223","Settled","Order Summary Backfill"
+"","","","","","","46182","295891424774723776_1","Returned","536","0","","-340","Settled","Order Summary Backfill"
+"","","","","","","46182","295927467176077760_1","Delivered","527","0","","397.5","Settled","Order Summary Backfill"
+"","","","","","","46181","295416279459670464_1","Returned","529","0","","-223","Settled","Order Summary Backfill"
+"","","","","","","46181","295476752153742144_1","Returned","529","0","","-223","Settled","Order Summary Backfill"
+"","","","","","","46181","295552032965318528_1","Returned","466","0","","-223","Settled","Order Summary Backfill"
+"","","","","","","46181","295611740578104064_1","Returned","527","0","","-216","Settled","Order Summary Backfill"
+"","","","","","","46181","295565155735991104_1","Delivered","403","0","","317.95","Settled","Order Summary Backfill"
+"","","","","","","46180","295064134357068224_1","Delivered","527","0","","397.54","Settled","Order Summary Backfill"
+"","","","","","","46180","295169616595526144_1","Delivered","527","0","","397.32","Settled","Order Summary Backfill"
+"","","","","","","46179","294827146278847232_1","Delivered","539","0","","397.46","Settled","Order Summary Backfill"
+"","","","","","","46179","294880218041688576_1","Delivered","527","0","","397.32","Settled","Order Summary Backfill"
+"","","","","","","46178","294281470617350976_1","Returned","526","0","","-340","Settled","Order Summary Backfill"
+"","","","","","","46178","294496573593776960_1","Returned","526","0","","-223","Settled","Order Summary Backfill"
+"","","","","","","46234","314626306947359488_1","Returned","172","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46234","314704883126575872_1","Returned","169","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46234","314638956217881216_1","Delivered","208","0","","123.21","Settled","Order Summary Backfill"
+"","","","","","","46234","314641446467943488_1","Delivered","197","0","","126.03","Settled","Order Summary Backfill"
+"","","","","","","46234","314654077992424064_1","Delivered","211","0","","127.34","Settled","Order Summary Backfill"
+"","","","","","","46234","314728982569696320_1","Delivered","212","0","","127.17","Settled","Order Summary Backfill"
+"","","","","","","46234","314734384196211328_1","Delivered","220","0","","127.11","Settled","Order Summary Backfill"
+"","","","","","","46234","314787832727485632_1","Delivered","353","0","","269.62","Settled","Order Summary Backfill"
+"","","","","","","46234","314800739964539520_1","Delivered","193","0","","108.42","Settled","Order Summary Backfill"
+"","","","","","","46234","314801914427941632_1","Delivered","248","0","","129.32","Settled","Order Summary Backfill"
+"","","","","","","46233","314270684986201600_1","Delivered","169","0","","99.33","Settled","Order Summary Backfill"
+"","","","","","","46233","314272646707479232_1","Delivered","192","0","","252.04","Settled","Order Summary Backfill"
+"","","","","","","46233","314363296618003656_1","Delivered","210","0","","123.35","Settled","Order Summary Backfill"
+"","","","","","","46233","314398824798606848_1","Delivered","269","0","","168.99","Settled","Order Summary Backfill"
+"","","","","","","46233","314405587160284224_1","Delivered","227","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46233","314421589935799360_1","Delivered","211","0","","127.15","Settled","Order Summary Backfill"
+"","","","","","","46233","314469407657809409_1","Delivered","196","0","","108.4","Settled","Order Summary Backfill"
+"","","","","","","46232","313878328293315200_1","Delivered","384","0","","298.04","Settled","Order Summary Backfill"
+"","","","","","","46232","313887383346363584_1","Delivered","171","0","","99.32","Settled","Order Summary Backfill"
+"","","","","","","46232","313893909327446720_1","Delivered","384","0","","280.55","Settled","Order Summary Backfill"
+"","","","","","","46232","313896086196388544_1","Delivered","386","0","","298.03","Settled","Order Summary Backfill"
+"","","","","","","46232","313909453367661184_1","Delivered","226","0","","158.85","Settled","Order Summary Backfill"
+"","","","","","","46232","313917140105942528_1","Delivered","383","0","","298.1","Settled","Order Summary Backfill"
+"","","","","","","46232","313917891069989504_1","Delivered","355","0","","269.38","Settled","Order Summary Backfill"
+"","","","","","","46232","313918032233484928_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46232","313922649751225024_1","Delivered","227","0","","158.87","Settled","Order Summary Backfill"
+"","","","","","","46232","313935319233143552_1","Delivered","249","0","","147.24","Settled","Order Summary Backfill"
+"","","","","","","46232","314060284520814080_1","Delivered","382","0","","280.55","Settled","Order Summary Backfill"
+"","","","","","","46232","314061047765286080_1","Delivered","209","0","","123.36","Settled","Order Summary Backfill"
+"","","","","","","46232","314061562110006784_1","Delivered","170","0","","99.33","Settled","Order Summary Backfill"
+"","","","","","","46232","314080416819303936_1","Delivered","324","0","","181.08","Settled","Order Summary Backfill"
+"","","","","","","46232","314104684377160768_1","Delivered","193","0","","108.23","Settled","Order Summary Backfill"
+"","","","","","","46231","313554054420484736_1","Returned","179","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46231","313582043899772096_1","Returned","211","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46231","313385068420080384_1","Delivered","358","0","","269.62","Settled","Order Summary Backfill"
+"","","","","","","46231","313389447924089536_1","Delivered","227","0","","159.04","Settled","Order Summary Backfill"
+"","","","","","","46231","313491653662286592_1","Delivered","354","0","","269.39","Settled","Order Summary Backfill"
+"","","","","","","46231","313491598197248640_1","Delivered","358","0","","251.68","Settled","Order Summary Backfill"
+"","","","","","","46231","313506381461601472_1","Delivered","383","0","","280.55","Settled","Order Summary Backfill"
+"","","","","","","46231","313507743234166144_1","Delivered","383","0","","298.25","Settled","Order Summary Backfill"
+"","","","","","","46231","313515818709091008_1","Delivered","384","0","","280.36","Settled","Order Summary Backfill"
+"","","","","","","46231","313534907108229824_1","Delivered","355","0","","269.4","Settled","Order Summary Backfill"
+"","","","","","","46231","313544739738521152_1","Delivered","201","0","","128.17","Settled","Order Summary Backfill"
+"","","","","","","46231","313559920535872256_1","Delivered","192","0","","108.24","Settled","Order Summary Backfill"
+"","","","","","","46231","313565014878731458_1","Delivered","191","0","","108.44","Settled","Order Summary Backfill"
+"","","","","","","46231","313565474902180544_1","Delivered","270","0","","151.21","Settled","Order Summary Backfill"
+"","","","","","","46231","313601202422975872_1","Delivered","155","0","","61.69","Settled","Order Summary Backfill"
+"","","","","","","46231","313609265440817856_1","Delivered","192","0","","108.42","Settled","Order Summary Backfill"
+"","","","","","","46231","313664524057518848_1","Delivered","385","0","","298.09","Settled","Order Summary Backfill"
+"","","","","","","46231","313667142187650624_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46231","313671552545006336_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46231","313675638094335360_1","Delivered","355","0","","269.38","Settled","Order Summary Backfill"
+"","","","","","","46231","313677470657056128_1","Delivered","355","0","","251.52","Settled","Order Summary Backfill"
+"","","","","","","46231","313678153796494080_1","Delivered","211","0","","145.11","Settled","Order Summary Backfill"
+"","","","","","","46231","313680525009027776_1","Delivered","354","0","","269.39","Settled","Order Summary Backfill"
+"","","","","","","46231","313680828722696834_1","Delivered","355","0","","269.2","Settled","Order Summary Backfill"
+"","","","","","","46231","313680828722696834_2","Delivered","355","0","","269.2","Settled","Order Summary Backfill"
+"","","","","","","46231","313681691007684160_1","Delivered","214","0","","123.36","Settled","Order Summary Backfill"
+"","","","","","","46231","313722253626740288_1","Delivered","215","0","","127.32","Settled","Order Summary Backfill"
+"","","","","","","46231","313738444000890432_1","Delivered","354","0","","251.72","Settled","Order Summary Backfill"
+"","","","","","","46231","313744335005715840_1","Delivered","355","0","","251.72","Settled","Order Summary Backfill"
+"","","","","","","46230","313143609179147648_1","Delivered","192","0","","119.21","Settled","Order Summary Backfill"
+"","","","","","","46230","313145989909041792_1","Delivered","183","0","","109.26","Settled","Order Summary Backfill"
+"","","","","","","46230","313148865242407680_1","Delivered","248","0","","129.34","Settled","Order Summary Backfill"
+"","","","","","","46230","313166953485030016_1","Delivered","321","0","","198.69","Settled","Order Summary Backfill"
+"","","","","","","46230","313214011831157440_1","Delivered","222","0","","118.87","Settled","Order Summary Backfill"
+"","","","","","","46230","313227144993821312_1","Delivered","243","0","","127.35","Settled","Order Summary Backfill"
+"","","","","","","46230","313265620756893056_1","Delivered","219","0","","101.23","Settled","Order Summary Backfill"
+"","","","","","","46230","313327348299501120_1","Delivered","227","0","","142.11","Settled","Order Summary Backfill"
+"","","","","","","46230","313339042732647168_1","Delivered","173","0","","100.12","Settled","Order Summary Backfill"
+"","","","","","","46230","313346693394801408_1","Delivered","172","0","","82.42","Settled","Order Summary Backfill"
+"","","","","","","46230","313369338152128064_1","Delivered","210","0","","123.2","Settled","Order Summary Backfill"
+"","","","","","","46230","313372065322646720_1","Delivered","388","0","","298.21","Settled","Order Summary Backfill"
+"","","","","","","46229","312898178768556672_1","Returned","173","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46229","312992595042575104_1","Returned","324","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46229","312679271818011392_1","Delivered","175","0","","82.41","Settled","Order Summary Backfill"
+"","","","","","","46229","312770914558616320_1","Delivered","226","0","","158.85","Settled","Order Summary Backfill"
+"","","","","","","46229","312778563474462080_1","Delivered","320","0","","180.74","Settled","Order Summary Backfill"
+"","","","","","","46229","312781828056454528_1","Delivered","356","0","","269.62","Settled","Order Summary Backfill"
+"","","","","","","46229","312785857109071232_1","Delivered","320","0","","180.69","Settled","Order Summary Backfill"
+"","","","","","","46229","312795585844252032_1","Delivered","172","0","","82.44","Settled","Order Summary Backfill"
+"","","","","","","46229","312802682933775744_1","Delivered","269","0","","168.63","Settled","Order Summary Backfill"
+"","","","","","","46229","312812316738921216_1","Delivered","227","0","","142.11","Settled","Order Summary Backfill"
+"","","","","","","46229","312820256387143040_1","Delivered","152","0","","61.68","Settled","Order Summary Backfill"
+"","","","","","","46229","312842729880932992_1","Delivered","211","0","","127.17","Settled","Order Summary Backfill"
+"","","","","","","46229","312846740166317440_1","Delivered","192","0","","119.39","Settled","Order Summary Backfill"
+"","","","","","","46229","312849101074349248_1","Delivered","320","0","","180.69","Settled","Order Summary Backfill"
+"","","","","","","46229","312854587023229632_1","Delivered","384","0","","280.48","Settled","Order Summary Backfill"
+"","","","","","","46229","312858979834733312_1","Delivered","412","0","","312.2","Settled","Order Summary Backfill"
+"","","","","","","46229","312868829016264064_1","Delivered","150","0","","67.65","Settled","Order Summary Backfill"
+"","","","","","","46229","312869026250293952_1","Delivered","191","0","","101.3","Settled","Order Summary Backfill"
+"","","","","","","46229","312874098652807872_1","Delivered","211","0","","127.15","Settled","Order Summary Backfill"
+"","","","","","","46229","312878464155714240_1","Delivered","191","0","","126.22","Settled","Order Summary Backfill"
+"","","","","","","46229","312888071564967104_1","Delivered","227","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46229","312893198984741568_1","Delivered","192","0","","126.03","Settled","Order Summary Backfill"
+"","","","","","","46229","312915911419925888_1","Delivered","383","0","","280.36","Settled","Order Summary Backfill"
+"","","","","","","46229","312935402245756289_1","Delivered","192","0","","101.29","Settled","Order Summary Backfill"
+"","","","","","","46229","312942065541382848_1","Delivered","201","0","","128.16","Settled","Order Summary Backfill"
+"","","","","","","46229","312947404914462080_1","Delivered","355","0","","251.69","Settled","Order Summary Backfill"
+"","","","","","","46229","312949821652456064_1","Delivered","320","0","","198.37","Settled","Order Summary Backfill"
+"","","","","","","46229","312952343535455616_1","Delivered","150","0","","61.66","Settled","Order Summary Backfill"
+"","","","","","","46229","312995435874550464_1","Delivered","213","0","","127.15","Settled","Order Summary Backfill"
+"","","","","","","46228","312479941110173056_1","Returned","174","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46228","312552842140728514_1","Returned","231","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46228","312589712713880960_1","Returned","320","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46228","312636124113704320_1","Returned","207","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46228","312298915073234048_1","Delivered","192","0","","108.44","Settled","Order Summary Backfill"
+"","","","","","","46228","312435997549827456_1","Delivered","227","0","","159.04","Settled","Order Summary Backfill"
+"","","","","","","46228","312459011370713794_1","Delivered","228","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46228","312471569456053440_1","Delivered","413","0","","328.08","Settled","Order Summary Backfill"
+"","","","","","","46228","312489741743760128_1","Delivered","472","0","","263.24","Settled","Order Summary Backfill"
+"","","","","","","46228","312492487343488192_1","Delivered","472","0","","263.46","Settled","Order Summary Backfill"
+"","","","","","","46228","312571943928144640_1","Delivered","194","0","","108.23","Settled","Order Summary Backfill"
+"","","","","","","46228","312576505925804800_1","Delivered","342","0","","248.48","Settled","Order Summary Backfill"
+"","","","","","","46228","312582019753648896_1","Delivered","192","0","","216.68","Settled","Order Summary Backfill"
+"","","","","","","46228","312602254686195072_1","Delivered","192","0","","126.21","Settled","Order Summary Backfill"
+"","","","","","","46228","312605764199764608_1","Delivered","173","0","","82.39","Settled","Order Summary Backfill"
+"","","","","","","46228","312609802987438784_1","Delivered","301","0","","161.79","Settled","Order Summary Backfill"
+"","","","","","","46228","312610146060018432_1","Delivered","201","0","","128.16","Settled","Order Summary Backfill"
+"","","","","","","46228","312618761301562752_1","Delivered","208","0","","123.17","Settled","Order Summary Backfill"
+"","","","","","","46228","312642671952646784_1","Delivered","192","0","","101.29","Settled","Order Summary Backfill"
+"","","","","","","46228","312643186625385856_1","Delivered","192","0","","108.22","Settled","Order Summary Backfill"
+"","","","","","","46227","312057812350075840_1","Delivered","192","0","","108.23","Settled","Order Summary Backfill"
+"","","","","","","46227","312059705841013376_1","Delivered","230","0","","142.26","Settled","Order Summary Backfill"
+"","","","","","","46227","312111676151497664_1","Delivered","218","0","","127.32","Settled","Order Summary Backfill"
+"","","","","","","46227","312117402130084736_1","Delivered","192","0","","108.45","Settled","Order Summary Backfill"
+"","","","","","","46227","312126158867936000_1","Delivered","259","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46227","312162216387186048_1","Delivered","214","0","","127.28","Settled","Order Summary Backfill"
+"","","","","","","46227","312188469221667584_1","Delivered","215","0","","140.09","Settled","Order Summary Backfill"
+"","","","","","","46227","312244892878140288_1","Delivered","211","0","","140.11","Settled","Order Summary Backfill"
+"","","","","","","46227","312250034864157568_1","Delivered","211","0","","127.34","Settled","Order Summary Backfill"
+"","","","","","","46227","312270834654678400_1","Delivered","384","0","","298.25","Settled","Order Summary Backfill"
+"","","","","","","46226","311904873958540160_1","Returned","208","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46226","311766613626127360_1","Delivered","227","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46226","311777732583425088_1","Delivered","192","0","","108.24","Settled","Order Summary Backfill"
+"","","","","","","46226","311833986646045568_1","Delivered","274","0","","151.18","Settled","Order Summary Backfill"
+"","","","","","","46226","311876157364646592_1","Delivered","226","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46226","311880447258985472_1","Delivered","193","0","","108.41","Settled","Order Summary Backfill"
+"","","","","","","46226","311895911804633984_1","Delivered","191","0","","108.24","Settled","Order Summary Backfill"
+"","","","","","","46226","311901736057111552_1","Delivered","192","0","","108.44","Settled","Order Summary Backfill"
+"","","","","","","46226","311909528356717504_1","Delivered","212","0","","127.17","Settled","Order Summary Backfill"
+"","","","","","","46225","311450400769377216_1","Returned","192","0","","-74","Settled","Order Summary Backfill"
+"","","","","","","46225","311322959212119104_1","Delivered","211","0","","145.11","Settled","Order Summary Backfill"
+"","","","","","","46225","311411666736841728_1","Delivered","228","0","","142.08","Settled","Order Summary Backfill"
+"","","","","","","46225","311460138055828416_1","Delivered","211","0","","127.34","Settled","Order Summary Backfill"
+"","","","","","","46225","311478103455237056_1","Delivered","226","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46225","311496075330651200_1","Delivered","229","0","","142.1","Settled","Order Summary Backfill"
+"","","","","","","46225","311547592108606464_1","Delivered","301","0","","162.17","Settled","Order Summary Backfill"
+"","","","","","","46224","311062460507554880_1","Returned","211","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46224","311136295386809280_1","Returned","211","0","","-100.97","Settled","Order Summary Backfill"
+"","","","","","","46224","310991879284130881_1","Delivered","211","0","","144.94","Settled","Order Summary Backfill"
+"","","","","","","46224","310993317460640640_1","Delivered","192","0","","108.44","Settled","Order Summary Backfill"
+"","","","","","","46224","310999754710647680_1","Delivered","240","0","","158.78","Settled","Order Summary Backfill"
+"","","","","","","46224","311023724092654528_1","Delivered","197","0","","108.4","Settled","Order Summary Backfill"
+"","","","","","","46224","311044514078983232_1","Delivered","212","0","","127.33","Settled","Order Summary Backfill"
+"","","","","","","46224","311149514289513408_1","Delivered","211","0","","127.17","Settled","Order Summary Backfill"
+"","","","","","","46224","311171484993389632_1","Delivered","227","0","","142.18","Settled","Order Summary Backfill"
+"","","","","","","46224","311192836408280128_1","Delivered","211","0","","127.16","Settled","Order Summary Backfill"
+"","","","","","","46224","311195688041906880_1","Delivered","211","0","","127.35","Settled","Order Summary Backfill"
+"","","","","","","46224","311200214216016576_1","Delivered","249","0","","129.02","Settled","Order Summary Backfill"
+"","","","","","","46223","310517390188413952_1","Delivered","192","0","","108.41","Settled","Order Summary Backfill"
+"","","","","","","46223","310643489304150912_1","Delivered","215","0","","127.32","Settled","Order Summary Backfill"
+"","","","","","","46223","310647802097238976_1","Delivered","382","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46223","310654637877429184_1","Delivered","209","0","","123.35","Settled","Order Summary Backfill"
+"","","","","","","46223","310790818803942464_1","Delivered","216","0","","127.32","Settled","Order Summary Backfill"
+"","","","","","","46223","310841788577547264_1","Delivered","208","0","","140.28","Settled","Order Summary Backfill"
+"","","","","","","46222","310212800416776896_1","Delivered","214","0","","144.94","Settled","Order Summary Backfill"
+"","","","","","","46222","310269488770485632_1","Delivered","386","0","","298.03","Settled","Order Summary Backfill"
+"","","","","","","46222","310299006486119360_1","Delivered","212","0","","127.33","Settled","Order Summary Backfill"
+"","","","","","","46222","310321444850697280_1","Delivered","271","0","","168.88","Settled","Order Summary Backfill"
+"","","","","","","46222","310334363042776128_1","Delivered","227","0","","142.08","Settled","Order Summary Backfill"
+"","","","","","","46222","310339347377488768_1","Delivered","289","0","","146.54","Settled","Order Summary Backfill"
+"","","","","","","46222","310404799952782400_1","Delivered","270","0","","151.16","Settled","Order Summary Backfill"
+"","","","","","","46222","310419115313660864_1","Delivered","212","0","","127.34","Settled","Order Summary Backfill"
+"","","","","","","46222","310419515626423360_1","Delivered","212","0","","127.34","Settled","Order Summary Backfill"
+"","","","","","","46222","310442449279583296_1","Delivered","192","0","","108.42","Settled","Order Summary Backfill"
+"","","","","","","46222","310451326976984000_1","Delivered","211","0","","127.34","Settled","Order Summary Backfill"
+"","","","","","","46221","309857209163121600_1","Delivered","270","0","","168.88","Settled","Order Summary Backfill"
+"","","","","","","46221","309905300364919808_1","Delivered","211","0","","127.15","Settled","Order Summary Backfill"
+"","","","","","","46221","309918840794579904_1","Delivered","280","0","","176.57","Settled","Order Summary Backfill"
+"","","","","","","46221","309952350167172032_1","Delivered","211","0","","127.35","Settled","Order Summary Backfill"
+"","","","","","","46221","309967957528871808_1","Delivered","191","0","","108.42","Settled","Order Summary Backfill"
+"","","","","","","46221","309972071056605888_1","Delivered","211","0","","508.58","Settled","Order Summary Backfill"
+"","","","","","","46221","309977221476289920_1","Delivered","208","0","","140.14","Settled","Order Summary Backfill"
+"","","","","","","46221","309980692657114496_1","Delivered","364","0","","279.15","Settled","Order Summary Backfill"
+"","","","","","","46221","310011507147443584_1","Delivered","212","0","","145.11","Settled","Order Summary Backfill"
+"","","","","","","46221","310023296677481856_1","Delivered","221","0","","126.1","Settled","Order Summary Backfill"
+"","","","","","","46221","310047116684624576_1","Delivered","354","0","","251.72","Settled","Order Summary Backfill"
+"","","","","","","46221","310106928686760896_1","Delivered","211","0","","127.35","Settled","Order Summary Backfill"
+"","","","","","","46221","310111249759404992_1","Delivered","192","0","","108.44","Settled","Order Summary Backfill"
+"","","","","","","46220","309468937886827392_1","RTO","269","0","","148.77","Settled","Order Summary Backfill"
+"","","","","","","46220","309476665711592448_1","Delivered","251","0","","146.98","Settled","Order Summary Backfill"
+"","","","","","","46220","309486911049892800_1","Delivered","249","0","","129.05","Settled","Order Summary Backfill"
+"","","","","","","46220","309530280335442624_1","Delivered","384","0","","280.36","Settled","Order Summary Backfill"
+"","","","","","","46220","309546436217996224_1","Delivered","355","0","","251.5","Settled","Order Summary Backfill"
+"","","","","","","46220","309579670142256000_1","Delivered","355","0","","251.5","Settled","Order Summary Backfill"
+"","","","","","","46220","309584586692822016_1","Delivered","361","0","","269.16","Settled","Order Summary Backfill"
+"","","","","","","46220","309590733810238528_1","Delivered","192","0","","108.28","Settled","Order Summary Backfill"
+"","","","","","","46220","309597743457668480_1","Delivered","384","0","","298.45","Settled","Order Summary Backfill"
+"","","","","","","46220","309602154413491136_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46220","309602173929587776_1","Delivered","355","0","","269.38","Settled","Order Summary Backfill"
+"","","","","","","46220","309617430761475456_1","Delivered","386","0","","298.48","Settled","Order Summary Backfill"
+"","","","","","","46220","309624150224470912_1","Delivered","360","0","","269.36","Settled","Order Summary Backfill"
+"","","","","","","46220","309643653872288832_1","Delivered","269","0","","168.63","Settled","Order Summary Backfill"
+"","","","","","","46220","309647133481304768_1","Delivered","211","0","","127.35","Settled","Order Summary Backfill"
+"","","","","","","46220","309674103927931968_1","Delivered","384","0","","280.55","Settled","Order Summary Backfill"
+"","","","","","","46220","309679327358944128_1","Delivered","385","0","","298.48","Settled","Order Summary Backfill"
+"","","","","","","46220","309705648050996160_1","Delivered","383","0","","298.25","Settled","Order Summary Backfill"
+"","","","","","","46220","309708035872457728_1","Delivered","192","0","","108.28","Settled","Order Summary Backfill"
+"","","","","","","46220","309709055718231424_1","Delivered","248","0","","129.32","Settled","Order Summary Backfill"
+"","","","","","","46220","309717554849580032_1","Delivered","250","0","","129.34","Settled","Order Summary Backfill"
+"","","","","","","46220","309723535520236608_1","Delivered","383","0","","298.25","Settled","Order Summary Backfill"
+"","","","","","","46220","309744025039209344_1","Delivered","193","0","","108.42","Settled","Order Summary Backfill"
+"","","","","","","46220","309757444534502400_1","Delivered","271","0","","168.88","Settled","Order Summary Backfill"
+"","","","","","","46219","309159140754916416_1","Returned","271","0","","-8.39","Settled","Order Summary Backfill"
+"","","","","","","46219","309251016690435136_1","Returned","387","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46219","309335155675139456_1","Returned","364","0","","-34.09","Settled","Order Summary Backfill"
+"","","","","","","46219","309376188697972096_1","Returned","247","0","","-314","Settled","Order Summary Backfill"
+"","","","","","","46219","309047815568264576_1","Delivered","355","0","","269.24","Settled","Order Summary Backfill"
+"","","","","","","46219","309097936541647552_1","Delivered","274","0","","168.87","Settled","Order Summary Backfill"
+"","","","","","","46219","309126250885219392_1","Delivered","358","0","","269.37","Settled","Order Summary Backfill"
+"","","","","","","46219","309139531301585920_1","Delivered","383","0","","298.25","Settled","Order Summary Backfill"
+"","","","","","","46219","309142513162322944_1","Delivered","384","0","","298.04","Settled","Order Summary Backfill"
+"","","","","","","46219","309147998213803392_1","Delivered","364","0","","279.57","Settled","Order Summary Backfill"
+"","","","","","","46219","309152782139720640_1","Delivered","384","0","","298.04","Settled","Order Summary Backfill"
+"","","","","","","46219","309153979554792512_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46219","309157430967862272_1","Delivered","248","0","","129.06","Settled","Order Summary Backfill"
+"","","","","","","46219","309170312489141184_1","Delivered","354","0","","251.68","Settled","Order Summary Backfill"
+"","","","","","","46219","309175904456868864_1","Delivered","384","0","","298.04","Settled","Order Summary Backfill"
+"","","","","","","46219","309176170816144320_1","Delivered","171","0","","92.36","Settled","Order Summary Backfill"
+"","","","","","","46219","309177229831767104_1","Delivered","196","0","","108.4","Settled","Order Summary Backfill"
+"","","","","","","46219","309182304747425153_1","Delivered","356","0","","251.68","Settled","Order Summary Backfill"
+"","","","","","","46219","309182756454073024_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46219","309188779348787904_1","Delivered","354","0","","269.62","Settled","Order Summary Backfill"
+"","","","","","","46219","309190798742586048_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46219","309193755591609728_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46219","309194225040163520_1","Delivered","387","0","","280.52","Settled","Order Summary Backfill"
+"","","","","","","46219","309194619182026112_1","Delivered","248","0","","129.32","Settled","Order Summary Backfill"
+"","","","","","","46219","309199400503280512_1","Delivered","363","0","","269.2","Settled","Order Summary Backfill"
+"","","","","","","46219","309203951421424320_1","Delivered","385","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46219","309208796026015104_1","Delivered","360","0","","269.16","Settled","Order Summary Backfill"
+"","","","","","","46219","309209304460624576_1","Delivered","359","0","","269.62","Settled","Order Summary Backfill"
+"","","","","","","46219","309210674634883776_1","Delivered","384","0","","-100","Settled","Order Summary Backfill"
+"","","","","","","46219","309215238362956672_1","Delivered","278","0","","158.96","Settled","Order Summary Backfill"
+"","","","","","","46219","309228950780052352_1","Delivered","301","0","","162.03","Settled","Order Summary Backfill"
+"","","","","","","46219","309230924904727616_1","Delivered","355","0","","251.67","Settled","Order Summary Backfill"
+"","","","","","","46219","309249404173485120_1","Delivered","196","0","","108.24","Settled","Order Summary Backfill"
+"","","","","","","46219","309256555869408640_1","Delivered","275","0","","168.66","Settled","Order Summary Backfill"
+"","","","","","","46219","309265377385185984_1","Delivered","385","0","","280.54","Settled","Order Summary Backfill"
+"","","","","","","46219","309283773747495872_1","Delivered","208","0","","123.35","Settled","Order Summary Backfill"
+"","","","","","","46219","309283932541485760_1","Delivered","384","0","","280.55","Settled","Order Summary Backfill"
+"","","","","","","46219","309288271647802432_1","Delivered","355","0","","269.38","Settled","Order Summary Backfill"
+"","","","","","","46219","309289784906548096_1","Delivered","248","0","","147","Settled","Order Summary Backfill"
+"","","","","","","46219","309297134451229568_1","Delivered","385","0","","298.04","Settled","Order Summary Backfill"
+"","","","","","","46219","309301023382373057_1","Delivered","269","0","","150.99","Settled","Order Summary Backfill"
+"","","","","","","46219","309340519460146560_1","Delivered","320","0","","198.7","Settled","Order Summary Backfill"
+"","","","","","","46219","309352363179836416_1","Delivered","301","0","","162.05","Settled","Order Summary Backfill"
+"","","","","","","46219","309352338547445120_1","Delivered","228","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46219","309362768300147648_1","Delivered","320","0","","180.94","Settled","Order Summary Backfill"
+"","","","","","","46219","309365294793687937_1","Delivered","227","0","","159.04","Settled","Order Summary Backfill"
+"","","","","","","46219","309373587872220224_1","Delivered","273","0","","168.61","Settled","Order Summary Backfill"
+"","","","","","","46219","309375773516402048_1","Delivered","274","0","","150.97","Settled","Order Summary Backfill"
+"","","","","","","46219","309395502785299136_1","Delivered","273","0","","151.2","Settled","Order Summary Backfill"
+"","","","","","","46219","309310191529296832_1","Cancelled","270","0","","168.88","Settled","Order Summary Backfill"
+"","","","","","","46218","308884159462572672_1","Returned","386","0","","105.43","Settled","Order Summary Backfill"
+"","","","","","","46218","308684834061622144_1","Delivered","277","0","","176.6","Settled","Order Summary Backfill"
+"","","","","","","46218","308767845121180160_1","Delivered","358","0","","251.68","Settled","Order Summary Backfill"
+"","","","","","","46218","308800826095370880_1","Delivered","385","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46218","308813623818633728_1","Delivered","383","0","","298.06","Settled","Order Summary Backfill"
+"","","","","","","46218","308828269921370752_1","Delivered","385","0","","280.54","Settled","Order Summary Backfill"
+"","","","","","","46218","308832692666511936_1","Delivered","386","0","","298.03","Settled","Order Summary Backfill"
+"","","","","","","46218","308835943283098176_1","Delivered","356","0","","269.38","Settled","Order Summary Backfill"
+"","","","","","","46218","308841604041605888_1","Delivered","384","0","","280.55","Settled","Order Summary Backfill"
+"","","","","","","46218","308857605386846720_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46218","308864999596688000_1","Delivered","385","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46218","308881332472316544_1","Delivered","388","0","","251.66","Settled","Order Summary Backfill"
+"","","","","","","46218","308885009585079040_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46218","308890172257403648_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46218","308890196471120640_1","Delivered","385","0","","280.52","Settled","Order Summary Backfill"
+"","","","","","","46218","308894727082803904_1","Delivered","355","0","","251.72","Settled","Order Summary Backfill"
+"","","","","","","46218","308899196825121344_1","Delivered","229","0","","142.26","Settled","Order Summary Backfill"
+"","","","","","","46218","308992667344372672_1","Delivered","384","0","","298.25","Settled","Order Summary Backfill"
+"","","","","","","46218","308993948256210304_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46218","308995822509556800_1","Delivered","354","0","","251.69","Settled","Order Summary Backfill"
+"","","","","","","46218","308996003319448256_1","Delivered","354","0","","269.2","Settled","Order Summary Backfill"
+"","","","","","","46218","308999826459264000_1","Delivered","392","0","","298.01","Settled","Order Summary Backfill"
+"","","","","","","46218","309000150590882816_1","Delivered","384","0","","280.36","Settled","Order Summary Backfill"
+"","","","","","","46218","309000750556709952_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46218","309002237668920704_1","Delivered","354","0","","269.39","Settled","Order Summary Backfill"
+"","","","","","","46218","309002383975711424_1","Delivered","389","0","","298.21","Settled","Order Summary Backfill"
+"","","","","","","46217","308436920609479232_1","Returned","248","0","","-100.09","Settled","Order Summary Backfill"
+"","","","","","","46217","308546941557087104_1","Returned","355","0","","80.05","Settled","Order Summary Backfill"
+"","","","","","","46217","308551164390742912_1","Returned","270","0","","-90.59","Settled","Order Summary Backfill"
+"","","","","","","46217","308594186685651328_1","Returned","384","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46217","308633294705728064_1","Returned","383","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46217","308339415334984256_1","Delivered","361","0","","269.36","Settled","Order Summary Backfill"
+"","","","","","","46217","308381213331757632_1","Delivered","274","0","","151.23","Settled","Order Summary Backfill"
+"","","","","","","46217","308415100976044544_1","Delivered","386","0","","280.57","Settled","Order Summary Backfill"
+"","","","","","","46217","308428660179409472_1","Delivered","383","0","","280.38","Settled","Order Summary Backfill"
+"","","","","","","46217","308431971122813312_1","Delivered","358","0","","269.38","Settled","Order Summary Backfill"
+"","","","","","","46217","308436737804933760_1","Delivered","354","0","","251.5","Settled","Order Summary Backfill"
+"","","","","","","46217","308440636322421760_1","Delivered","355","0","","269.2","Settled","Order Summary Backfill"
+"","","","","","","46217","308449334532971072_1","Delivered","272","0","","151.2","Settled","Order Summary Backfill"
+"","","","","","","46217","308454886700948352_1","Delivered","355","0","","251.68","Settled","Order Summary Backfill"
+"","","","","","","46217","308455237472360832_1","Delivered","387","0","","298.22","Settled","Order Summary Backfill"
+"","","","","","","46217","308456005326019136_1","Delivered","384","0","","280.55","Settled","Order Summary Backfill"
+"","","","","","","46217","308460164490140160_1","Delivered","355","0","","251.69","Settled","Order Summary Backfill"
+"","","","","","","46217","308467455603972672_1","Delivered","352","0","","269.21","Settled","Order Summary Backfill"
+"","","","","","","46217","308468639530162688_1","Delivered","355","0","","251.69","Settled","Order Summary Backfill"
+"","","","","","","46217","308483408425327232_1","Delivered","227","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46217","308490966221396992_1","Delivered","383","0","","298.25","Settled","Order Summary Backfill"
+"","","","","","","46217","308497172600134272_1","Delivered","359","0","","251.66","Settled","Order Summary Backfill"
+"","","","","","","46217","308501299149347712_1","Delivered","360","0","","269.16","Settled","Order Summary Backfill"
+"","","","","","","46217","308501962528857088_1","Delivered","387","0","","298.03","Settled","Order Summary Backfill"
+"","","","","","","46217","308513411984726592_1","Delivered","272","0","","151.08","Settled","Order Summary Backfill"
+"","","","","","","46217","308523010586516480_1","Delivered","270","0","","151.21","Settled","Order Summary Backfill"
+"","","","","","","46217","308568934117481088_1","Delivered","355","0","","269.2","Settled","Order Summary Backfill"
+"","","","","","","46217","308597737678117440_1","Delivered","211","0","","127.15","Settled","Order Summary Backfill"
+"","","","","","","46217","308630703225641472_1","Delivered","355","0","","269.56","Settled","Order Summary Backfill"
+"","","","","","","46217","308643640036235776_1","Delivered","383","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46217","308655500563258240_1","Delivered","382","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46217","308447530719779200_1","Cancelled","355","0","","269.38","Settled","Order Summary Backfill"
+"","","","","","","46216","308084125871906304_1","Returned","311","0","","-8.5","Settled","Order Summary Backfill"
+"","","","","","","46216","308134259454254272_1","Returned","273","0","","-23.92","Settled","Order Summary Backfill"
+"","","","","","","46216","308174144615751168_1","Returned","352","0","","-40","Settled","Order Summary Backfill"
+"","","","","","","46216","308092340731015488_1","Delivered","211","0","","145.11","Settled","Order Summary Backfill"
+"","","","","","","46216","308105906330693952_1","Delivered","278","0","","177.1","Settled","Order Summary Backfill"
+"","","","","","","46216","308129474179395904_1","Delivered","282","0","","159.04","Settled","Order Summary Backfill"
+"","","","","","","46216","308131545700004160_1","Delivered","300","0","","181.05","Settled","Order Summary Backfill"
+"","","","","","","46216","308132670948890752_1","Delivered","383","0","","298.25","Settled","Order Summary Backfill"
+"","","","","","","46216","308144930074008769_1","Delivered","211","0","","123.36","Settled","Order Summary Backfill"
+"","","","","","","46216","308153305893575872_1","Delivered","211","0","","127.34","Settled","Order Summary Backfill"
+"","","","","","","46216","308181118536194240_1","Delivered","358","0","","269.37","Settled","Order Summary Backfill"
+"","","","","","","46216","308183434131042624_1","Delivered","384","0","","298.04","Settled","Order Summary Backfill"
+"","","","","","","46216","308183435222571136_1","Delivered","278","0","","159.17","Settled","Order Summary Backfill"
+"","","","","","","46216","308184732302694528_1","Delivered","301","0","","180.79","Settled","Order Summary Backfill"
+"","","","","","","46216","308185868246046848_1","Delivered","270","0","","151.23","Settled","Order Summary Backfill"
+"","","","","","","46216","308189849499365696_1","Delivered","382","0","","298.28","Settled","Order Summary Backfill"
+"","","","","","","46216","308196650182629504_1","Delivered","248","0","","129.32","Settled","Order Summary Backfill"
+"","","","","","","46216","308223841804163776_1","Delivered","192","0","","108.44","Settled","Order Summary Backfill"
+"","","","","","","46216","308235503202409280_1","Delivered","381","0","","298.25","Settled","Order Summary Backfill"
+"","","","","","","46216","308241479289656384_1","Delivered","354","0","","269.4","Settled","Order Summary Backfill"
+"","","","","","","46216","308254906077879040_1","Delivered","271","0","","168.88","Settled","Order Summary Backfill"
+"","","","","","","46216","308255978523282304_1","Delivered","274","0","","168.66","Settled","Order Summary Backfill"
+"","","","","","","46216","308258002396977984_1","Delivered","249","0","","129.32","Settled","Order Summary Backfill"
+"","","","","","","46216","308262521201695552_1","Delivered","354","0","","251.5","Settled","Order Summary Backfill"
+"","","","","","","46216","308268409379179392_1","Delivered","384","0","","280.56","Settled","Order Summary Backfill"
+"","","","","","","46216","308276136029920192_1","Delivered","173","0","","82.57","Settled","Order Summary Backfill"
+"","","","","","","46216","308289328323959296_1","Delivered","356","0","","269.57","Settled","Order Summary Backfill"
+"","","","","","","46215","307787342612536832_1","Returned","174","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46215","307733561426517760_1","Delivered","302","0","","180.79","Settled","Order Summary Backfill"
+"","","","","","","46215","307743177551912448_1","Delivered","284","0","","176.79","Settled","Order Summary Backfill"
+"","","","","","","46215","307747894655086912_1","Delivered","359","0","","251.66","Settled","Order Summary Backfill"
+"","","","","","","46215","307759821869161664_1","Delivered","304","0","","180.78","Settled","Order Summary Backfill"
+"","","","","","","46215","307763069442136256_1","Delivered","211","0","","127.34","Settled","Order Summary Backfill"
+"","","","","","","46215","307777389127342272_1","Delivered","390","0","","280.33","Settled","Order Summary Backfill"
+"","","","","","","46215","307796016259013824_1","Delivered","286","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46215","307826309258943680_1","Delivered","192","0","","119.03","Settled","Order Summary Backfill"
+"","","","","","","46215","307867360777853056_1","Delivered","249","0","","129.1","Settled","Order Summary Backfill"
+"","","","","","","46215","307893060590313216_1","Delivered","382","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46215","307893889079564416_1","Delivered","279","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46215","307896543204810496_1","Delivered","352","0","","251.51","Settled","Order Summary Backfill"
+"","","","","","","46215","307899450881857664_1","Delivered","278","0","","159.12","Settled","Order Summary Backfill"
+"","","","","","","46215","307904051004731712_1","Delivered","299","0","","198.72","Settled","Order Summary Backfill"
+"","","","","","","46215","307918880058798400_1","Delivered","383","0","","298.22","Settled","Order Summary Backfill"
+"","","","","","","46215","307932474135420096_1","Delivered","282","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46214","307227382891880192_1","Returned","301","0","","2.32","Settled","Order Summary Backfill"
+"","","","","","","46214","307352547151584768_1","Returned","300","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46214","307572854793859392_1","Returned","353","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46214","307393010306915840_1","Delivered","281","0","","317.78","Settled","Order Summary Backfill"
+"","","","","","","46214","307434916354316416_1","Delivered","353","0","","251.69","Settled","Order Summary Backfill"
+"","","","","","","46214","307461984369516032_1","Delivered","353","0","","251.5","Settled","Order Summary Backfill"
+"","","","","","","46214","307490633827229184_1","Delivered","353","0","","269.39","Settled","Order Summary Backfill"
+"","","","","","","46214","307506271456188544_1","Delivered","192","0","","126.03","Settled","Order Summary Backfill"
+"","","","","","","46214","307523404687941376_1","Delivered","357","0","","269.38","Settled","Order Summary Backfill"
+"","","","","","","46213","306930631077207808_1","Returned","281","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46213","307029744746616960_1","Returned","383","0","","105.29","Settled","Order Summary Backfill"
+"","","","","","","46213","307208467931209216_1","Returned","211","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46213","306871361368348800_1","Delivered","387","0","","298.22","Settled","Order Summary Backfill"
+"","","","","","","46213","306954038233538048_1","Delivered","300","0","","181.05","Settled","Order Summary Backfill"
+"","","","","","","46213","306967939336444096_1","Delivered","363","0","","269.34","Settled","Order Summary Backfill"
+"","","","","","","46213","306993379195607168_1","Delivered","173","0","","100.48","Settled","Order Summary Backfill"
+"","","","","","","46213","306999579034263040_1","Delivered","355","0","","269.38","Settled","Order Summary Backfill"
+"","","","","","","46213","307013449111248640_1","Delivered","384","0","","280.55","Settled","Order Summary Backfill"
+"","","","","","","46213","307013698916571264_1","Delivered","387","0","","298.04","Settled","Order Summary Backfill"
+"","","","","","","46213","307015817413384320_1","Delivered","353","0","","269.39","Settled","Order Summary Backfill"
+"","","","","","","46213","307016271093308928_1","Delivered","357","0","","269.62","Settled","Order Summary Backfill"
+"","","","","","","46213","307037073886009472_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46213","307105044787371520_1","Delivered","217","0","","145.09","Settled","Order Summary Backfill"
+"","","","","","","46213","307133182331132096_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46213","307141613716838592_1","Delivered","353","0","","251.72","Settled","Order Summary Backfill"
+"","","","","","","46213","307219780250115585_1","Delivered","301","0","","180.79","Settled","Order Summary Backfill"
+"","","","","","","46212","306667493728262336_1","Returned","299","0","","2.33","Settled","Order Summary Backfill"
+"","","","","","","46212","306772038285729536_1","Returned","300","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46212","306814081779964096_1","Returned","304","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46212","306829350039723523_1","Returned","304","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46212","306638242111412352_1","Delivered","300","0","","198.74","Settled","Order Summary Backfill"
+"","","","","","","46212","306651577480540480_1","Delivered","193","0","","108.42","Settled","Order Summary Backfill"
+"","","","","","","46212","306656392067576128_1","Delivered","210","0","","144.97","Settled","Order Summary Backfill"
+"","","","","","","46212","306698532617199104_1","Delivered","210","0","","145.12","Settled","Order Summary Backfill"
+"","","","","","","46212","306705001343229120_1","Delivered","301","0","","181.02","Settled","Order Summary Backfill"
+"","","","","","","46212","306718418949970112_1","Delivered","299","0","","198.98","Settled","Order Summary Backfill"
+"","","","","","","46212","306749400466988225_1","Delivered","383","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46212","306754735541180544_1","Delivered","300","0","","181.05","Settled","Order Summary Backfill"
+"","","","","","","46212","306774060972056320_1","Delivered","277","0","","158.91","Settled","Order Summary Backfill"
+"","","","","","","46212","306779076562678080_1","Delivered","305","0","","181.03","Settled","Order Summary Backfill"
+"","","","","","","46212","306798859651653120_1","Delivered","286","0","","176.55","Settled","Order Summary Backfill"
+"","","","","","","46212","306821771235236032_1","Delivered","211","0","","123.36","Settled","Order Summary Backfill"
+"","","","","","","46212","306825473191976128_1","Delivered","353","0","","269.2","Settled","Order Summary Backfill"
+"","","","","","","46212","306828514442092032_1","Delivered","279","0","","158.9","Settled","Order Summary Backfill"
+"","","","","","","46212","306828505987225792_1","Delivered","227","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46212","306852105443352064_1","Delivered","303","0","","181","Settled","Order Summary Backfill"
+"","","","","","","46211","306402629973122816_1","Returned","279","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46211","306477652143052992_1","Returned","315","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46211","306145618186367296_1","Delivered","385","0","","298.22","Settled","Order Summary Backfill"
+"","","","","","","46211","306147807957997696_1","Delivered","196","0","","108.41","Settled","Order Summary Backfill"
+"","","","","","","46211","306150769919991552_1","Delivered","196","0","","126.2","Settled","Order Summary Backfill"
+"","","","","","","46211","306243737645379904_1","Delivered","300","0","","180.8","Settled","Order Summary Backfill"
+"","","","","","","46211","306305333407194880_1","Delivered","386","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46211","306354333347551424_1","Delivered","247","0","","146.74","Settled","Order Summary Backfill"
+"","","","","","","46211","306371545839378176_1","Delivered","303","0","","181","Settled","Order Summary Backfill"
+"","","","","","","46211","306434609020999872_1","Delivered","247","0","","146.74","Settled","Order Summary Backfill"
+"","","","","","","46211","306442078421458688_1","Delivered","382","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46211","306461885187387712_1","Delivered","389","0","","269.02","Settled","Order Summary Backfill"
+"","","","","","","46210","305875264105420992_1","Returned","358","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46210","306036987952373248_1","Returned","270","0","","-8.39","Settled","Order Summary Backfill"
+"","","","","","","46210","305953101546068160_1","Delivered","282","0","","176.81","Settled","Order Summary Backfill"
+"","","","","","","46209","305655302974873088_1","Returned","193","0","","-67.71","Settled","Order Summary Backfill"
+"","","","","","","46209","305734475479457536_1","Returned","227","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46209","305428930945752256_1","Delivered","279","0","","159.12","Settled","Order Summary Backfill"
+"","","","","","","46209","305445782583391680_1","Delivered","386","0","","280.37","Settled","Order Summary Backfill"
+"","","","","","","46209","305545191142054080_1","Delivered","383","0","","298.25","Settled","Order Summary Backfill"
+"","","","","","","46209","305554560624506304_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46209","305561674990690048_1","Delivered","384","0","","298.04","Settled","Order Summary Backfill"
+"","","","","","","46209","305572798569913856_1","Delivered","356","0","","269.25","Settled","Order Summary Backfill"
+"","","","","","","46209","305623911475304640_1","Delivered","300","0","","181.05","Settled","Order Summary Backfill"
+"","","","","","","46209","305666581001024960_1","Delivered","300","0","","180.84","Settled","Order Summary Backfill"
+"","","","","","","46209","305677333160139968_1","Delivered","383","0","","298.06","Settled","Order Summary Backfill"
+"","","","","","","46209","305679198780274112_1","Delivered","355","0","","269.62","Settled","Order Summary Backfill"
+"","","","","","","46209","305739005822705408_1","Delivered","403","0","","318.14","Settled","Order Summary Backfill"
+"","","","","","","46208","305270365344133440_1","Returned","300","0","","-69.67","Settled","Order Summary Backfill"
+"","","","","","","46208","305150873129334144_1","Delivered","249","0","","129.34","Settled","Order Summary Backfill"
+"","","","","","","46208","305156779088140352_1","Delivered","227","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46208","305207921468972800_1","Delivered","381","0","","280.37","Settled","Order Summary Backfill"
+"","","","","","","46208","305231896916908160_1","Delivered","382","0","","298.14","Settled","Order Summary Backfill"
+"","","","","","","46208","305234071398281536_1","Delivered","353","0","","269.43","Settled","Order Summary Backfill"
+"","","","","","","46208","305240656213301376_1","Delivered","354","0","","251.64","Settled","Order Summary Backfill"
+"","","","","","","46208","305250459219336960_1","Delivered","208","0","","123.36","Settled","Order Summary Backfill"
+"","","","","","","46208","305274164886248640_1","Delivered","382","0","","280.54","Settled","Order Summary Backfill"
+"","","","","","","46208","305283661648246208_1","Delivered","383","0","","298.06","Settled","Order Summary Backfill"
+"","","","","","","46208","305291455455698112_1","Delivered","386","0","","280.51","Settled","Order Summary Backfill"
+"","","","","","","46208","305304936832948352_1","Delivered","302","0","","198.7","Settled","Order Summary Backfill"
+"","","","","","","46208","305334843252267136_1","Delivered","229","0","","110.4","Settled","Order Summary Backfill"
+"","","","","","","46208","305342838526826688_1","Delivered","383","0","","298.1","Settled","Order Summary Backfill"
+"","","","","","","46208","305352779765504128_1","Delivered","352","0","","251.69","Settled","Order Summary Backfill"
+"","","","","","","46208","305353170761555456_1","Delivered","353","0","","269.26","Settled","Order Summary Backfill"
+"","","","","","","46208","305356644472395968_1","Delivered","384","0","","298.1","Settled","Order Summary Backfill"
+"","","","","","","46208","305366854587242560_1","Delivered","392","0","","280.48","Settled","Order Summary Backfill"
+"","","","","","","46208","305381011962076352_1","Delivered","302","0","","181","Settled","Order Summary Backfill"
+"","","","","","","46208","305399759316196864_1","Delivered","354","0","","251.68","Settled","Order Summary Backfill"
+"","","","","","","46207","305013237504947584_1","Returned","300","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46207","304705309138081984_1","Delivered","356","0","","269.39","Settled","Order Summary Backfill"
+"","","","","","","46207","304711209495043584_1","Delivered","382","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46207","304829000933038272_1","Delivered","270","0","","168.63","Settled","Order Summary Backfill"
+"","","","","","","46207","304876841154786752_1","Delivered","353","0","","269.62","Settled","Order Summary Backfill"
+"","","","","","","46207","304943802253456832_1","Delivered","303","0","","181.08","Settled","Order Summary Backfill"
+"","","","","","","46207","304950034302310592_1","Delivered","383","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46207","304950138970513152_1","Delivered","319","0","","181.02","Settled","Order Summary Backfill"
+"","","","","","","46207","304962088032672960_1","Delivered","381","0","","298.07","Settled","Order Summary Backfill"
+"","","","","","","46207","304962949776791680_1","Delivered","384","0","","298.04","Settled","Order Summary Backfill"
+"","","","","","","46207","304986917622396288_1","Delivered","305","0","","180.99","Settled","Order Summary Backfill"
+"","","","","","","46207","305003598562619712_1","Delivered","385","0","","298.22","Settled","Order Summary Backfill"
+"","","","","","","46207","305011834376041920_1","Delivered","358","0","","251.72","Settled","Order Summary Backfill"
+"","","","","","","46206","304614129952758976_1","Returned","302","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46206","304658048325393600_1","Exchanged","278","0","","20.06","Settled","Order Summary Backfill"
+"","","","","","","46206","304405924213568960_1","Delivered","353","0","","269.39","Settled","Order Summary Backfill"
+"","","","","","","46206","304452057006749056_1","Delivered","384","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46206","304468457126435008_1","Delivered","382","0","","298.06","Settled","Order Summary Backfill"
+"","","","","","","46206","304501529560626560_1","Delivered","382","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46206","304509057904293248_1","Delivered","385","0","","298.48","Settled","Order Summary Backfill"
+"","","","","","","46206","304558520182126016_1","Delivered","382","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46206","304584431602659648_1","Delivered","352","0","","269.21","Settled","Order Summary Backfill"
+"","","","","","","46206","304629434870782144_1","Delivered","353","0","","269.39","Settled","Order Summary Backfill"
+"","","","","","","46206","304632389773440448_1","Delivered","301","0","","198.98","Settled","Order Summary Backfill"
+"","","","","","","46206","304635344795148032_1","Delivered","229","0","","142.27","Settled","Order Summary Backfill"
+"","","","","","","46206","304647685906176192_1","Delivered","279","0","","159.18","Settled","Order Summary Backfill"
+"","","","","","","46206","304655428893661376_1","Delivered","300","0","","198.72","Settled","Order Summary Backfill"
+"","","","","","","46206","304659781498073408_1","Delivered","303","0","","181","Settled","Order Summary Backfill"
+"","","","","","","46206","304660871345747392_1","Delivered","353","0","","269.39","Settled","Order Summary Backfill"
+"","","","","","","46206","304670100119253312_1","Delivered","382","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46205","304124735997228416_1","Returned","382","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46205","304133689781394624_1","Returned","193","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46205","303987990913752256_1","Delivered","383","0","","298.24","Settled","Order Summary Backfill"
+"","","","","","","46205","304040744189304000_1","Delivered","352","0","","269.46","Settled","Order Summary Backfill"
+"","","","","","","46205","304212620263962048_1","Delivered","385","0","","280.52","Settled","Order Summary Backfill"
+"","","","","","","46205","304219567973473792_1","Delivered","249","0","","129.34","Settled","Order Summary Backfill"
+"","","","","","","46205","304296629450978688_1","Delivered","173","0","","100.12","Settled","Order Summary Backfill"
+"","","","","","","46205","304302910702237056_1","Delivered","361","0","","251.63","Settled","Order Summary Backfill"
+"","","","","","","46204","303601246224586944_1","Returned","164","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46204","303628592632706496_1","Returned","300","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46204","303916339226484224_1","Returned","381","0","","105.3","Settled","Order Summary Backfill"
+"","","","","","","46204","303926384064470528_1","Returned","302","0","","-157","Settled","Order Summary Backfill"
+"","","","","","","46204","303773794378855808_1","Delivered","352","0","","269.42","Settled","Order Summary Backfill"
+"","","","","","","46204","303818849919856960_1","Delivered","386","0","","280.37","Settled","Order Summary Backfill"
+"","","","","","","46204","303836876186727808_1","Delivered","354","0","","269.26","Settled","Order Summary Backfill"
+"","","","","","","46204","303886007458477504_1","Delivered","210","0","","127.15","Settled","Order Summary Backfill"
+"","","","","","","46204","303930322956328448_1","Delivered","300","0","","198.93","Settled","Order Summary Backfill"
+"","","","","","","46204","303937348974221504_1","Delivered","388","0","","298.08","Settled","Order Summary Backfill"
+"","","","","","","46204","303952274831973888_1","Delivered","271","0","","168.62","Settled","Order Summary Backfill"
